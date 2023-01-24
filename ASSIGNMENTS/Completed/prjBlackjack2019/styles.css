@@ -1,0 +1,299 @@
+/*
+	Yi Bo Cheng
+	James Billinger
+	04/18/2019
+	This is our CSS page for our game
+*/
+body{
+	background-image: url(images/darbyBackground.png);
+	opacity: 1;
+	margin-bottom: 10%;
+	overflow-y: hidden;
+	background-attachment: fixed;
+	background-position: center; 
+	font-family:georgia,garamond,serif;
+}
+/* Sound */
+audio{
+	
+    right: 5%;
+    position: fixed;
+    bottom: 10%;
+}
+#music{
+	font-size: 175%;
+	color: white;
+	background-color: black;
+	right: 3.5%;
+    position: fixed;
+    bottom: 17%;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* Buttons */
+#btns{
+	height: 10%;
+}
+#btnBet{
+	position: fixed;
+	left: 8%;
+	top: 48%;
+	width: 300px;
+}
+.button{
+	width: 10%;
+	color: white;
+	font-size: 30px;
+	background-image: url(images/stars.png);
+	background-size: cover;
+}
+button:hover{
+	border: 2px solid white;
+}
+#btnPlay{
+	width: 20%;
+	height: 10%;
+	position: fixed;
+	left: 40%;
+	top: 55%;
+	color: white;
+	-webkit-text-stroke: 2px black;
+	font-size: 200%;
+	background-image: url(images/buttons.jpg);
+	background-size: cover;
+}
+#btnRepeat{
+	background-image: none;
+	background-color: red;
+	width: 400px;
+}
+/* Headings */
+.cardheadings{
+	background-color: #496693;
+	padding: 3px;
+	display: inline-block;
+	margin-top: 50px;
+	color: #c5d64d;
+	border-radius: 10px;
+}
+.cardheadings h1{
+	font-size: 50%;
+}
+#dealerCardValue{
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	margin-left: 40%;
+	margin-right: 40%;
+	border-radius: 10px;
+}
+#playerCardValue{
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	margin-left: 40%;
+	margin-right: 40%;
+	border-radius: 10px;
+}
+/* Bet elements */
+#betting{
+	background-image: url(images/dice.jpg);
+	background-size: cover;
+	display: inline-block;
+	padding: 0.5%;
+	border-radius: 5px;
+	position: fixed;
+	top: 40%;
+	left: 5%;
+	width: 20%;
+	border-style: solid;
+}
+#lblMoney{
+	font-size: 225%;
+	left: 15%;
+	position: fixed;
+	top: 7%;
+	width: 10%;
+}
+/* Cards */
+#pCards{
+	border-radius: 10px;
+}
+#playerCards img{
+	border-radius: 10px;
+}
+#dealerCards img{
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.card{
+	width: 8%;
+}
+/* Text Box */
+#imgTextBox{
+	width: 30%;
+	height: 30%;
+	position: fixed;
+	right: 2%;
+	top: 0%;
+}
+#status{
+	background-color: white;
+	width: 30%;
+	height: 22.5%;
+	position: fixed;
+	right: 2%;
+	top: 0%;
+	border-radius: 33px;
+	font-size: 70%;
+}
+/* Popup Buttons */
+.buttonPopup{
+	width: 25%;
+	color: black;
+	font-size: 120%;
+}
+#btnGo{
+	margin-top: 2%;
+}
+/* Start popup styles */
+#startPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/popup.jpg);
+}
+#startPopupContent{
+	width: 75%;
+	height: 75%;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white; 
+	margin: auto;
+	margin-top: 75px;
+	padding: 30px;
+	font-size: 18.5px;
+}
+#startPopupContent img{
+	width: 220px;
+	height: 30%;
+	border: solid black;
+	border-radius: 10px;
+	opacity: 0.6;
+}
+.heading{
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+}
+/* Lose popup styles */
+#losePopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/darkBackground.png");
+}
+#losePopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Win popup styles */
+#winPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/winBackground.png);
+	background-size: cover;
+}
+#winPopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Tie popup styles */
+#tiePopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/tieBackground.png);
+}
+#tiePopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Gameover popup styles */
+#gameoverPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/gameOverBackground.jpg)
+}
+#gameoverPopupContent{
+	width: 1000px;
+	height: 740px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+}
+/* Play popup */
+#playPopup{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/tieBackground.png)
+}
+#playPopupContent{
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	width: 50%;
+	height: 60%;
+	border-width: 2px;
+	background-image: url(images/purple.jpg); 
+	padding: 5%;
+	font-size: 100%;
+	color: #989b45;
+	border: solid black;
+	border-radius: 50px;
+}
+#playPopupContent img{
+	width: 90%;
+}
+.japanese{
+	font-size: 75%;
+}
+/* decorations */
+#chips{
+	height: 20%;
+	width: 15%;
+	position: fixed;
+}

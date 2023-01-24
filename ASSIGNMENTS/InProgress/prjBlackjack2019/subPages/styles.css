@@ -1,0 +1,53 @@
+/*	
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our CSS page for our testing chart and screenshot pages
+*/
+body{
+	background-color: #292826;
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: 'Metrophobic', sans-serif;
+	color: #f9d342;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+/* Home button */
+#home{
+	float: left;
+	position: fixed;
+}
+/* Testing and screenshot charts*/
+table{
+	border-collapse: collapse;
+	border: solid;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+td{
+	border: solid;
+	padding: 10px;
+}
+th{
+	border: solid;
+}
+#testingChart{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 25px;
+}
+#screenshots{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 25px;
+}
+/* Screenshots */
+#screenshots img{
+	width: 100%;
+	height: 65%;
+}

@@ -1,0 +1,48 @@
+body
+{
+background-color:#ffefea;
+font-family:arial,sans-serif; 
+}
+
+h1,h2,h3,h4
+{
+font-family: "arial,'sans-serif'"; 
+color:black
+
+table
+{
+font-family: "arial,'sans-serif'"; 
+}
+
+p
+{
+margin-left: 2pt;
+margin-right: 2pt;
+}
+
+table
+{
+margin-left: 2pt;
+margin-right: 2pt;
+}
+
+
+.blue
+{
+color:blue;
+}
+
+.red
+{
+color:red;
+}
+
+.green
+{
+color:green;
+}
+
+a:link     { color:blue }
+a:visited  { color:saddlebrown }
+a:active   { color:red }
+a:hover    { color:red }

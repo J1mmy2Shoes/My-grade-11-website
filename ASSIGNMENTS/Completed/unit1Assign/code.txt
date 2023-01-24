@@ -1,0 +1,896 @@
+﻿Yi Bo Cheng, James Billinger
+03/01/2019
+Unit 1 Webpage Assignment
+This shows the code of our assignment.
+
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code of the homepage of our website.
+-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Homepage</title>
+      <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+   
+   <body>
+      <!--Code for website title and picture-->
+      <div class="heading">
+         <h1>Unit 1</h1>
+         <h2>Working in the Computing/Programming Environment</h2>
+      </div>
+      <div class="picture">
+         <img class="main" src="images/main.jpg" border="10">
+      </div>
+      <!--Code for unit description-->
+      <div class="description">
+         <h2>Unit Description</h2>
+         <p>
+            This unit focuses on basic computer and information science skills. Students identify hardware components, research ergonomic considerations, practise file management skills, access resources through local and wide area networks, and research the evolution of programming languages. They develop skills for success in the computer and information science environment. Students focus on the Computer and Information Science environment; students also examine respect for the environment and wise use of resources from a responsible perspective.
+         </p>
+      </div>
+      <!--
+         This shows the code we used to create 3 columns for the navigation section. We found this code from https://www.w3schools.com/howto/howto_css_three_columns.asp
+      -->
+      <div class="heading2">
+         <h1>Topics</h1>
+      </div>
+      <div class="topics">
+         <div class="column-left1">
+            <a href="topics/HTML/index.html">
+               <h2>Coding Using HTML</h2>
+               <img class="menuimage" src="images/topic1.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-center1">
+            <a href="topics/FormattingCode/index.html">
+               <h2>Formatting Code</h2>
+               <img class="menuimage" src="images/topic2.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-right1">
+            <a href="topics/Documentation/index.html">
+               <h2>Documentation</h2>
+               <img class="menuimage" src="images/topic3.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-left2">
+            <a href="topics/NumberSystems/index.html">
+               <h2>Computer Number Systems</h2>
+               <img class="menuimage" src="images/topic4.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-center2">
+            <a href="topics/hardware/index.html">
+               <h2>Computer Hardware and Software</h2>
+               <img class="menuimage" src="images/topic5.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-right2">
+            <a href="topics/Binary/index.html">
+               <h2>Binary and Analog Signals</h2>
+               <img class="menuimage"  src="images/topic6.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-left3">
+            <a href="topics/Languges/index.html">
+               <h2>Compiled and Interpreted Languages</h2>
+               <img class="menuimage" src="images/topic7.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-center3">
+            <a href="topics/CSS/index.html">
+               <h2>Web Design Using CSS</h2>
+               <img class="menuimage" src="images/topic8.png" width=225 height=225>
+            </a>
+         </div>
+         <div class="column-right3">
+            <a href="topics/InstructionSet/index.html">
+               <h2>Programming Using an Instruction Set</h2>
+               <img class="menuimage" src="images/topic9.png" width=225 height=225>
+            </a>
+         </div>
+      </div>
+      <!--Code for avatars-->
+      <h2 style="text-decoration: underline; color: #f9d342;">Made by Yi Bo and James</h2>
+      <center>
+        <img src="images/yiboavatar.png">
+        <img src="images/jamesavatar.png">
+      </center>
+      <!--Code for sitemap-->
+      <div class="heading3">
+         <h1>Site Map</h1>
+      </div>
+      <div class="sitemap">
+         <img src="images/sitemap.png">
+      </div>
+      <!--Code for page layouts-->
+      <div class="layout">
+         <div class="heading4">
+            <h1>Page Layout</h1>
+         </div>
+         <div class="layoutleft">
+            <h2>Homepage</h2>
+            <img src="images/homepageLayout.png" width="400" height="500">
+         </div>
+         <div class="layoutright">
+            <h2>Topic Pages</h2>
+            <img src="images/topicpageLayout.png" width="400" height="500">
+         </div>
+      </div>
+      <!--Code for text file link-->
+      <div class="textfile">
+         <h1>Code Text File</h1>
+         <a href="code.txt">
+           <img class="fileimage" src="images/text.png" width="225" height="225">
+         </a>
+      </div>
+      <hr>
+      <p>
+         --Unit 1 Assignment by Yi Bo and James--
+      </p>
+   </body>
+</html>
+/*
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This is the styles sheet of the homepage. 
+*/
+/*The color scheme, font and theme we used for the homepage.*/ 
+body{
+   background-color: #292826;
+   color: white;
+   margin-bottom: 50px;
+}
+h1{
+   font-family: 'Metrophobic', sans-serif;
+   text-align: center;
+}
+h2{
+   font-family: 'Metrophobic', sans-serif;
+   text-align: center;
+}
+h3{
+   font-family: 'Montserrat', sans-serif;
+}
+p{
+   font-family: 'Montserrat', sans-serif;
+   line-height: 25px;
+   text-align: center;
+}
+/*Style for heading and main picture*/
+.heading h1{
+   font-size: 75px;
+   color: #f9d342;
+}
+.heading h2{
+   font-size: 30px;
+   margin-bottom: 75px;
+}
+.picture{
+   text-align: center;
+}
+/*Style for unit description*/
+.description{
+   text-align: center;
+   border-radius: 20px;
+   padding: 20px;
+   background-color: #696969;
+   margin-top: 125px;
+   margin-bottom: 175px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 75%;
+   line-height: 30px;
+}
+.description h2{
+   color: #f9d342;
+   font-size: 50px;
+}
+.description p{
+   font-size: 20px;
+   line-height: 40px;
+}
+.heading2{
+   color: #f9d342;
+   text-align: center;
+   font-size: 30px;
+   text-decoration: underline;
+}
+/*Style for the navagation section*/
+.topics{
+   margin-top: 25px;
+}
+.topics h2{
+   font-size: 20px;
+}
+.topics a{
+   font-family: 'Metrophobic', sans-serif;
+   text-decoration: none;
+   text-align: center;
+   color: white;
+}
+/*Style for the 3 columns We found this code from https://www.w3schools.com/howto/howto_css_three_columns.asp*/
+.column-left1{
+   float: left; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+   margin-top: 75px;
+}
+.column-left2{
+   float: left; 
+   width: 33.33%;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: auto;
+   margin-top: 75px;
+}
+.column-left3{
+   float: left; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+   margin-top: 75px;
+   margin-bottom: 100px;
+}
+.column-center1{
+   display: inline-block; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+   margin-top: 75px;
+}
+.column-center2{
+   display: inline-block; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 75px;
+}
+.column-center3{  
+   display: inline-block; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 75px;
+   margin-bottom: 100px;
+}
+.column-right1{ 
+   float: right; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 75px;
+}
+.column-right2{ 
+   float: right; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 75px;
+}
+.column-right3{ 
+   float: right; 
+   width: 33.33%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 75px;
+   margin-bottom: 100px;
+}
+.main{
+   border-color: green;
+}
+.menuimage:hover{
+   opacity: 0.6;
+}
+/*Style for sitemaps*/
+.heading3{
+   margin-top: 200px;
+   margin-bottom: 50px;
+   color: #f9d342;
+   text-decoration: underline; 
+}
+.sitemap{
+   text-align: center;
+   width: 90%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+/*Style for page layouts*/
+.layout{
+   margin-top: 100px;
+}
+.layout h1{
+   text-decoration: underline;
+   color: #f9d342;
+}
+.layoutleft{
+   float: left;
+   width: 50%;
+   text-align: center;
+   margin-bottom: 100px;
+}
+.layoutright{
+   float: right;
+   width: 50%;
+   text-align: center;
+   margin-bottom: 100px;
+}
+.layout img{
+   border-radius: 10px;
+}
+.layout h2{
+   color: #f9d342;
+}
+/*Style for text file*/
+.textfile{
+   text-align: center;
+   text-decoration: none;
+   color: #f9d342;
+}
+.fileimage:hover{
+   opacity: 0.6;
+}
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Coding Using HTML</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Coding Using HTML</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic1.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description and information-->
+      <div class="description">
+         <p>
+            HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display the text, images and other forms of multimedia on a webpage.
+         </p>
+         <h2 style="color: #f9d342"><> Tags</h2>
+         <p>
+            HTML utilises "<>" tags to present information.
+         </p>
+         <h2 style="text-decoration: underline; color: #f9d342">Examples of "<>" tags:</h2>
+         <p>
+            <.html><br>
+            <.head><br>
+            <.body><br>
+            <.h1><br>
+            <.p><br>
+            <.div><br>
+            <.img><br>
+            <.a>
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://www.theserverside.com/definition/HTML-Hypertext-Markup-Language">www.theserverside.com/definition/HTML-Hypertext-Markup-Language</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Formatting Code</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Formatting Code</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic2.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description, pictures, and information-->
+      <div class="description">
+         <p>
+            Formatting code is an essential part of being a computer programmer. If the code a programmer has written is not formatted in a way that is neat and orderly, other programmers will not be able to understand what has been written.
+         </p>
+         <p>
+            Content in between tags should be indented by pressing "tab".
+         </p>
+         <h2 style="color: #f9d342">Example of a formatted code:</h2>
+         <center>
+            <img src="../../images/test.png">
+         </center>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Documentation</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic3.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description and information-->
+      <div class="description">
+         <p>
+            Software documentation is written text or illustration that accompanies computer software or is embedded in the source code. It either explains how it operates or how to use it, and may mean different things to people in different roles. Documentation is an important part of software engineering.
+         </p>
+         <h2 style="color: #f9d342"><.!-- --> Tag</h2>
+         <p>
+            <.!-- --> tags are used to document code in HTML files.
+         </p>
+         <h2 style="color: #f9d342">/* */ Tag</h2>
+         <p>
+            /* */tags are used to document code in CSS files.
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://en.wikipedia.org/wiki/Software_documentation">en.wikipedia.org/wiki/Software_documentation</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Computer Number Systems</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Computer Number Systems</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic4.png" width="275" height="275">
+      </div>
+      <!--Code for topic description, pictures, and information-->
+      <div class="description">
+         <p>
+            The technique to represent and work with numbers is a number system. The decimal number system is the most common number system. Other popular number systems include binary number system, octal number system, hexadecimal number system, etc.
+         </p>
+         <h2 style="color: #f9d342; text-decoration: underline;">Binary</h2>
+         <center>
+            <img src="../../images/binary.png" width="150" height="150">
+         </center>
+         <p>
+            Binary is a base 2 number system invented by Gottfried Leibniz that is made up of only two numbers: 0 and 1. This number system is the basis for all binary code, which is used to write data such as the instructions that computer processors use, or the digital text you read every day.
+         </p>
+         <h2 style="color: #f9d342; text-decoration: underline;">Decimal</h2>
+         <center>
+            <img src="../../images/decimal.png" width="150" height="150">
+         </center>
+         <p>
+            The decimal numeral system is the standard system for denoting integer and non-integer numbers. It is the extension to non-integer numbers of the Hindu–Arabic numeral system. The way of denoting numbers in the decimal system is often referred to as decimal notation.
+         </p>
+         <h2 style="color: #f9d342; text-decoration: underline;">Hexidecimal</h2>
+         <center>
+            <img src="../../images/hex.png" width="150" height="150">
+         </center>
+         <p>
+            In mathematics and computing, hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. It uses sixteen distinct symbols, most often the symbols "0"–"9" to represent values zero to nine, and "A"–"F" (or alternatively "a"–"f") to represent values ten to fifteen.
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://www.computerhope.com/jargon/b/binary.htm">www.computerhope.com/jargon/b/binary.htm</a>
+            <br><a href="https://en.wikipedia.org/wiki/Decimal">en.wikipedia.org/wiki/Decimal</a>
+            <br><a href="https://en.wikipedia.org/wiki/Hexadecimal">en.wikipedia.org/wiki/Hexadecimal</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Computer Hardware and Software</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Computer Hardware and Software</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic5.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description and information-->
+      <div class="description">
+         <h2 style="color: #f9d342; text-decoration: underline;">Hardware</h2>
+         <p>
+            Computer hardware is the physical components that a computer system requires to function. It encompasses everything with a circuit board that operates within a PC or laptop; including the motherboard, graphics card, CPU (Central Processing Unit), ventilation fans, webcam, power supply, and so on.
+         </p>
+         <p>
+            Although the design of hardware differs between desktop PCs and laptops due to their differences in size, the same core components will be found in both. Without hardware, there would be no way of running the essential software that makes computers so useful.
+         </p>
+         <p>
+            Although a computer can function only when both hardware and software are working together, the speed of a system will largely rely on the hardware used.
+         </p>
+         <h2 style="color: #f9d342; text-decoration: underline;">Software</h2>
+         <p>
+            Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work. This is in contrast to physical hardware, from which the system is built and actually performs the work. In computer science and software engineering, computer software is all information processed by computer systems, programs and data. Computer software includes computer programs, libraries and related non-executable data, such as online documentation or digital media. Computer hardware and software require each other and neither can be realistically used on its own.
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://www.crucial.com/usa/en/what-is-computer-hardware">www.crucial.com/usa/en/what-is-computer-hardware</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>      
+      <title>Binary and Analog Signals</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Binary and Analog Signals</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic6.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description, pictures, and information-->
+      <div class="description">
+         <h2 style="color: #f9d342; text-decoration: underline;">Binary Signals</h2>
+         <p>
+            Binary means "two states." The two states are sometimes called "1" and "0", or called "true" and "false", or called "on" and "off", (or other names.) The essential characteristic is that a single binary device can be in just one of two possible states.
+            A bit is a single "on/off" value.
+            A good example is a toggle switch, such as a light switch. You can turn it "on" or "off" but not (in normal operation) anything else. A light switch holds one bit of information.
+         </p>
+         <p>
+            There are many advantages to binary. Here are four (somewhat overlapping) important reasons for using binary:
+            Simple; easy to build.
+            Unambiguous signals (hence noise immunity).
+            Flawless copies can be made.
+            Anything that can be represented with some sort of pattern can be represented with patterns of bits.
+         </p>
+         <center>
+            <img src="../../images/binarysignal.gif">
+         </center>
+         <h2 style="color: #f9d342; text-decoration: underline;">Analog Signals</h2>
+         <p>
+            An analog signal may continuously change in value. Its values can be anything within a range of values, and its exact value at any time is important. The exact value at each time is part of the information it contains. Now say that you are observing the voltage of a wire. It has been agreed that any voltage below a threshold will be counted as an "off" signal, and that any value above the threshold will be counted as an "on" signal.
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://chortle.ccsu.edu/java5/Notes/chap02/ch02_2.html">chortle.ccsu.edu/java5/Notes/chap02/ch02_2.html</a>
+            <br>
+            <a href="https://chortle.ccsu.edu/AssemblyTutorial/Chapter-02/ass02_7.html">chortle.ccsu.edu/AssemblyTutorial/Chapter-02/ass02_7.html</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Compiled and Interpreted Languages</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Compiled and Interpreted Languages</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic7.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description and information-->
+      <div class="description">
+         <h2>
+            Programming languages generally fall into one of two categories: Compiled or Interpreted.
+         </h2>
+         <h2 style="color: #f9d342; text-decoration: underline;">
+            Compiled
+         </h2>
+         <p>
+            With a compiled language, the code you enter is reduced to a set of machine-specific instructions before being saved as an executable file. Compiled programs generally run faster than interpreted ones because interpreted programs must be reduced to machine instructions at runtime. 
+         </p>
+         <h2 style="color: #f9d342; text-decoration: underline;">
+            Interpreted
+         </h2>
+         <p>
+            With interpreted languages, the code is saved in the same format that you entered. Interpreted programs can modify themselves by adding or changing functions at runtime. It is also usually easier to develop applications in an interpreted environment because you don't have to recompile your application each time you want to test a small section.
+         </p>
+      </div>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://www.vanguardsw.com/dphelp4/dph00296.htm">www.vanguardsw.com/dphelp4/dph00296.htm</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>      
+      <title>Web Design Using CSS</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Web Design Using CSS</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic8.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description, pictures, and information-->
+      <div class="description">
+         <p>
+            CSS stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
+         </p>
+      </div>
+      <center>
+         <img src="../../images/css.png">
+      </center>
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://techterms.com/definition/css">techterms.com/definition/css</a>
+         </p>
+      </div>
+   </body>
+</html>
+<!--
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This shows the code we used to create topic pages.
+ -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Programming Using an Instruction Set</title>
+      <link rel="stylesheet" type="text/css" href="../styles.css">
+   </head>
+   
+   <body>
+      <!--Code for home button-->
+      <div class="home">
+         <a href="../../index.html">
+            <img src="../../images/home.png" height="85" width="85">
+         </a>
+      </div>
+      <!--Code for topic heading and picture-->
+      <div class="heading">
+         <h1>Programming Using an Instruction Set</h1>
+      </div>
+      <div class="picture">
+         <img src="../../images/topic9.png"  width="275" height="275">
+      </div>
+      <!--Code for topic description and information-->
+      <div class="description">
+         <p>
+            The instruction set, also called ISA (instruction set architecture), is part of a computer that pertains to programming, which is basically machine language. The instruction set provides commands to the processor, to tell it what it needs to do. The instruction set consists of addressing modes, instructions, native data types, registers, memory architecture, interrupt, and exception handling, and external I/O.
+         </p>
+      </div>
+      <center>
+         <img src="../../images/compproccesor.jpg" width="900" height="600" border="10">
+      </center>   
+      <!--Code for references-->
+      <div class="reference">
+         <h2>References</h2>
+         <p>
+            <a href="https://www.computerhope.com/jargon/i/instset.htm">www.computerhope.com/jargon/i/instset.htm</a>
+         </p>
+      </div>
+   </body>
+</html>
+/* 
+   Yi Bo Cheng, James Billinger
+   03/01/2019
+   Unit 1 Webpage Assignment
+   This is the style sheet we used for every topic page.
+*/
+/*The color scheme, font and theme we used for the topic pages.*/ 
+body{
+   background-color: #292826;
+   color: white;
+}
+h1{
+   font-family: 'Metrophobic', sans-serif;
+   text-align: center;
+}
+h2{
+   font-family: 'Metrophobic', sans-serif;
+   text-align: center;
+}
+h3{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+}
+/*Style for topic heading, picture, and description*/
+.description p{   
+   font-family: 'Montserrat', sans-serif;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 20px;
+   padding: 20px;
+   background-color: #696969;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 75%;
+   font-size: 30px;
+}
+.heading{
+   text-align: center;
+   margin-top: 10px;
+   margin-right: 280px;
+   margin-left: 250px;
+}
+.heading h1{
+   font-size: 75px;
+   color: #f9d342;
+}
+.picture{
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+/*Style for home button*/
+.home{
+   float: left;
+}
+/*Style for reference section*/
+.reference p{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   border-radius: 20px;
+   padding: 20px;
+   background-color: #696969;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 75%;
+   font-size: 20px;
+}

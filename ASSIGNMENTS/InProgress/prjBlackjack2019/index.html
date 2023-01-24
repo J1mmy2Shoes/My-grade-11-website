@@ -1,0 +1,146 @@
+<!-- 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our HTML page for our game
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blackjack</title>
+		<!-- jQuery and javascript links -->
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="code.js"></script>
+		<!-- css link -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<!-- Decorations and bank -->
+		<img id="chips" src="images/goodChips.png">
+		<label id="lblMoney" class="heading">$ 1000</label>	
+		<center>
+			<!-- Player cards elements -->
+			<div id="playerElements">
+				<h1 id="h1PlayerCards" class="cardheadings">Player Cards</h1>
+				<p id="playerCardValue">Card Value:</p>
+				<div id="playerCards">			
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard1" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard2" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard3" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard4" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard5" class="card">
+					<br>
+				</div>
+			</div>
+			<!-- Dealer card elements -->
+			<div id="dealerElements">
+				<h1 id="h1DealerCards" class="cardheadings">Dealer Cards</h1>
+				<p id="dealerCardValue">Card Value:</p>
+				<div id="dealerCards">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard1" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard2" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard3" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard4" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard5" class="card">
+				</div>
+			</div>
+			<!-- Darby textbox -->
+			<div id="textBox">
+				<div id="status"></div>
+				<img id="imgTextBox" src="images/textbox.png">
+			</div>
+			<!-- Game buttons -->
+			<div id="btns">
+				<button id="btnPlay" class="button"><b>Play!</b></button>
+				<button id="btnBet" class="button">Place bet ($):</button>
+				<button id="btnDeal" class="button">Deal</button>
+				<button id="btnHit" class="button">Hit</button>
+				<button id="btnStand" class="button">Stand</button>
+			</div>
+			<button id="btnRepeat" class="button">Play Again</button>
+			<!-- bet elements -->
+			<div id="betting">
+				<input type="text" id="txtBet"><br><br>
+			</div>
+			<!-- POPUPS -->
+			<!-- Start popup -->
+			<div id="startPopup">
+				<div id="startPopupContent">
+	
+					<h1 id="h1heading" class="heading">D'Arby's Blackjack</h1><br>
+					<h2>Game Rules</h2>
+					<p>
+						<u>How to play:</u><br>
+						The goal of the game is to beat the dealer(D'Arby) but at the same time not to go over 21.<br> 
+						•	Face cards are 10 and any other card is its pip value.<br>
+						•	You will first be assigned two cards.<br>
+						•	The dealer also deals him/herself two cards, only one of which you will be able to see.<br>
+						•	You will then have to decide whether or not to draw more cards.<br> 
+						•	After making this decision, the cards will be revealed and your total will be compared to that of the dealer.<br>
+						•	Whoever gets closest to 21 without going over wins the game.<br>
+						•	At the time you make the decision to draw or not to draw, you will also place a bet.<br>
+						•	If you win, you receive double the amount that you bet.<br> 
+						•	The player starts off with $1000.<br> 
+						•	If you lose all your money D'Arby will steal your soul.<br>
+					</p>
+					<img src="images/iSee.png" id="imgISee">
+				</div>	
+			</div>
+			<!-- Lose popup -->
+			<div id="losePopup">
+				<div id="losePopupContent">
+					<h1>You LOSE!</h1>
+					<img src="images/darbyLose.png" width="700" height="500">
+					<button id="btnViewLose" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Win popup -->
+			<div id="winPopup">
+				<div id="winPopupContent">
+					<h1>You WIN!</h1>
+					<img src="images/winImage.jpg" width="700" height="500">
+					<button id="btnViewWin" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Tie popup -->
+			<div id="tiePopup">
+				<div id="tiePopupContent">
+					<h1>You TIED!</h1>
+					<img src="images/tieImage.jpg" width="700" height="500">
+					<button id="btnViewTie" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Gameover popup -->
+			<div id="gameoverPopup">
+				<div id="gameoverPopupContent">
+					<h1>GAME OVER</h1>
+					<img src="images/gameOver.jpg" width="1000" height="720">
+					<button id="btnGameover" class="buttonPopup">Reload Game</button>
+				</div>
+			</div>
+			<!-- Play popup -->
+			<div id="playPopup">
+				<div id="playPopupContent">
+					<img src="images/darbyPNG.png">
+					<p class="japanese">
+						こんにちは。私の名前はダービーです、そして私はブラックジャックのゲームにあなたに挑戦します。知性と技能のこの激しい戦いにおいて、私たちは私たちのお金を賭けるだけでなく、私たちの魂も賭けるでしょう。今来て、あなたの存在のあらゆる繊維と私と戦ってください。
+					</p><br>
+					<p>
+						(Hello there my friend. My name is D"Arby and I challenge you to a game of Blackjack. In this intense battle of intellect and skill we shall not only bet our money, but our souls as well. Now come, fight me with every fibre of your being.)
+					</p>
+					<button id="btnGo" class="buttonPopup">Fight!</button>
+				</div>
+			</div>
+		</center>
+		<label id="music"><b>Toggle ingame music:</b></label><br>
+		<audio autoplay="" controls="">
+			<source src="sounds/brunoTheme.mp3" type="audio/mpeg">
+		</audio> 
+	</body>
+</html>
+
+

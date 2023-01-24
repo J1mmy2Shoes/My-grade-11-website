@@ -1,0 +1,49 @@
+body{
+	background-image: url("images/jbackground.png");
+	margin-bottom: 100px; 
+	margin-right: 150px; 
+	margin-left: 150px;
+	margin-top: 200px;
+}
+h1{
+	font-family: 'Bree Serif', serif; 
+	text-align:center;
+	color:white;
+	background-color: black;
+	border-radius: 30px;
+	padding: 8px;
+	display: inline-block;
+}
+h2{
+	font-family: 'Bree Serif', serif; 
+	text-align:center; 
+	color:white;
+	background-color: black;
+	border-radius: 30px;
+	padding: 8px;
+	display: inline-block;
+}
+a{
+	font-family:georgia,garamond,serif; 
+	color:black;}
+p{
+	font-family:georgia,garamond,serif; 
+	background-color: white; 
+	border-radius: 30px; 
+	text-align:center; 
+	color:black; 
+	padding: 8px;
+}
+embed{
+	margin-left: 150px;
+}
+.button{
+	position:absolute;
+	top: 40px;
+	left: 60px;
+} 
+.body{
+	margin-left:150px; 
+	margin-right:150px; 
+	margin padding:5px 16px;
+}

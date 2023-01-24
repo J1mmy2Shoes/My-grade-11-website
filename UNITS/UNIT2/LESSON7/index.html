@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			
+			let squareFeet=null;
+			let sheetCost=null;
+			let totalCost=null;
+			let sheetNumber=null;
+
+			squareFeet=+prompt("Hello, what is the square footage of flooring that needs to be covered?");
+			sheetCost=+prompt("How much does each sheet cost?");
+
+			sheetNumber=Math.ceil(squareFeet/32);
+			totalCost=Math.round(100*(sheetCost*sheetNumber*1.13))/100;
+
+
+			alert("You will need " + sheetNumber + " sheet(s).");
+			alert("The total cost including tax is " + totalCost);
+
+
+
+
+
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

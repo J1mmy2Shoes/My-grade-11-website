@@ -1,0 +1,301 @@
+<!--  INSTRUCTIONS FOR MAKING YOUR OWN FLASH CARDS:
+<p>
+1.  Modify this file with a text editor, such as Notepad.
+
+2.  Each card consists of a questions[] answers[] pair.
+ 
+3.  The cards are numbered from 0 to N-1.
+
+4.  For each questions[] line, enter a question between the quote marks 
+      (replacing what is already there.)  Keep everything on one line.
+
+8.  For its answers[] line, enter the answer between the quote marks 
+      (replacing what is already there.)  Keep everything on one line.
+
+9.  Delete any extra pairs you don't need, or add extra ones as needed.
+      (Use the editor's cut, copy, and paste to make this easy.)
+      Number added cards following the pattern of the first ones. 
+
+10. Change the line var numCards  = N to the number of cards you now have.
+      (Example: if you have 10 cards, they will be numbered 0 to 9 and
+      var NumCards = 10)
+
+11. Save the file.  Use a file name like "flashCards.html"  .
+
+12. Use the flash cards by clicking on the file name, or by opening them in
+    your browser.
+
+-->
+
+<html>
+<head>
+<title>Flashcards for Chapter 4</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+  var numCards  = 25                        // change this to the number of cards
+  var questions = new Array(numCards)
+  var answers   = new Array(numCards)
+  var asked     = new Array(numCards)
+  var qNumber
+
+  // The flash cards start here
+  questions[0] = "What component is sometimes called the brains of a computer?"
+  answers  [0] = "Processor"
+
+  questions[1] = "What component of a computer system is directly responsible for running a program?"
+  answers  [1] = "Processor"
+
+  questions[2] = "What is one of the important ideas of computer science?"
+  answers  [2] = "A large number of small operations can add up to a large and useful action."
+
+  questions[3] = "A tiny electronic operation that a processor performs is ..... "
+  answers  [3] = "a machine operation."
+
+  questions[4] = "A bit pattern that tells the processor what operation to perform is ..... "
+  answers  [4] = "a machine instruction."
+
+  questions[5] = "A set of machine instructions is called a ........ "
+  answers  [5] = "machine language program or an executable program."
+
+  questions[6] = "When a program is executing, where does it exist?"
+  answers  [6] = "In main memory."
+
+  questions[7] = "In what sequence are machine instructions usually executed?"
+  answers  [7] = "One at a time, in order."
+
+  questions[8] = "What word means: perform the machine operation that an instruction asks for?"
+  answers  [8] = "execute"
+
+  questions[9] = "What is a group of machine instructions that can be repeatedly executed?"
+  answers  [9] = "a loop"
+
+  questions[10] = "What is another name for integrated circuit?"
+  answers  [10] = "chip"
+
+  questions[11] = "How many transistors are in a modern processor chip?"
+  answers  [11] = "millions"
+
+  questions[12] = "Do Apple and Dell computers use the same type of processor chip?"
+  answers  [12] = "No"
+
+  questions[13] = "Can different types of processors run the same machine instructions?"
+  answers  [13] = "No"
+
+  questions[14] = "What does 'processor architecture' mean ?"
+  answers  [14] = "The machine operations of a processor and how they have been oraganized and implemented,"
+
+  questions[15] = "Name two high level programming languages "
+  answers  [15] = "Java, BASIC, FORTRAN, Pascal, C, C++"
+
+  questions[16] = "A text file that contains a human-readable version of a program is called.....?"
+  answers  [16] = "A source file (or source program)."
+
+  questions[17] = "To change a source program into an executable program it must be ...... "
+  answers  [17] = "translated  (or compiled)"
+
+  questions[18] = "The name of the program that changes a source file into an executable file is ....... ?"
+  answers  [18] = "A translator (or a compiler)."
+
+  questions[19] = "What program is usually used to create a source file?"
+  answers  [19] = "A text editor."
+
+  questions[20] = "The idea of using one source file to create different executables that run on different processors is ......."
+  answers  [20] = "software portability."
+
+  questions[21] = "What program acts like a processor that can directly execute a high level language?"
+  answers  [21] = "An interpreter"
+
+  questions[22] = "What is it called when software is used to imitate an actual machine?"
+  answers  [22] = "virtual"
+
+  questions[23] = "Which is fastest: executing a machine language program or interpreting a source program?"
+  answers  [23] = "executing a machine language program"
+
+  questions[24] = "Can one source program be translated into executable programs for several different processors?"
+  answers  [24] = "Yes"
+
+
+
+  // If you are making your own flashcards, do not modify anythin below this line.
+
+
+
+  // Initialize Variables
+
+  var state    = 0  // state 0 is question, state 1 is answer, 
+                    // state 2 is grade,    state 7 is final
+
+  for ( var j=0; j < asked.length; j++ ) asked[j] = 0
+
+function questionClick()
+{
+  var txt
+  var coin
+
+  if ( state == 0 )
+  {
+
+    coin = Math.floor( Math.random()*questions.length )
+    qNumber = coin
+
+    while ( asked[qNumber] == 1 && ((qNumber+1)%questions.length) != coin ) 
+      qNumber = (qNumber+1)%questions.length
+
+    if ( ((qNumber+1)%questions.length) == coin )
+    {
+      state = 7
+      txt = "You have gone through all the flash cards\n" 
+
+      txt +=  "Number of questions: " + document.aForm.count.value + "\n"
+      txt +=  "Number correct: " + document.aForm.numRight.value + "\n"
+      txt +=  "Percent correct: " +
+          Math.round((document.aForm.numRight.value*100)/document.aForm.count.value) + "\n"
+      document.aForm.questionArea.value = txt
+    }
+
+    else
+    {
+      state = 1
+      document.aForm.count.value++;
+      document.aForm.Counter.value = " " + document.aForm.count.value
+
+      document.aForm.questionArea.value  =  questions[qNumber] + "\n"
+      document.aForm.answerArea.value = " "
+    }
+
+  }
+}
+
+function answerClick()
+{
+  if ( state == 1 )
+  {
+    state = 2
+    document.aForm.answerArea.value =  answers[qNumber]
+  }
+}
+
+function rightClick()
+{
+  if ( state == 2 )
+  {
+    state = 0
+    document.aForm.numRight.value++
+    document.aForm.Right.value = " " + document.aForm.numRight.value
+    document.aForm.Wrong.value = " " + document.aForm.numWrong.value
+    asked[qNumber] = 1
+  }
+}
+
+function wrongClick()
+{
+  if ( state == 2 )
+  {
+    state = 0
+    document.aForm.numWrong.value++
+    document.aForm.Right.value = " " + document.aForm.numRight.value
+    document.aForm.Wrong.value = " " + document.aForm.numWrong.value
+  }
+}
+
+
+</SCRIPT>
+</head>
+
+<body>
+<center>
+<h1>Flash Cards on the Processor</h1>
+</center>
+
+<FORM name="aForm">
+<center>
+<textarea name="questionArea" rows="5" cols="70" wrap="physical">
+Instructions:
+Click on button 1 and to see the question. 
+Mentally answer the question.
+</textarea>
+
+<textarea name="answerArea" rows="5" cols="70" wrap="physical">
+Click on button 2 and to see the correct answer. 
+Then click on the "Right" or the "Wrong"
+button as appropriate.
+Repeat.
+</textarea>
+
+<p>
+Questions so far
+&nbsp;&nbsp;
+<input type=text name="Counter" size=5 value="">
+&nbsp;&nbsp;
+Number Right:
+&nbsp;&nbsp;
+<input type=text name="Right" size=5 value="">
+&nbsp;&nbsp;
+Number Wrong:
+&nbsp;&nbsp;
+<input type=text name="Wrong" size=5 value="">
+</p>
+
+<INPUT TYPE="button" 
+  name="questionButton" 
+  value="1. Ask Question" 
+  onClick="questionClick()">
+
+&nbsp;
+
+<INPUT TYPE="button" NAME="answerButton" 
+  value="2. Show Answer" 
+  onClick=answerClick()>
+
+&nbsp;
+
+<INPUT TYPE="button" NAME="rightButton" 
+  VALUE="3. Right" 
+  onClick="rightClick()">
+
+OR
+
+<INPUT TYPE="button" NAME="wrongButton" 
+  VALUE="3. Wrong" 
+  onClick="wrongClick()">
+
+<input type="hidden" name="numRight" value="0">
+<input type="hidden" name="numWrong" value="0">
+<input type="hidden" name="count" value="0">
+</center>
+</FORM>
+
+<hr>
+<p>
+<b>Instructions:</b> &nbsp; 
+Click on button 1 and to see the question. 
+Mentally answer the question.
+Click on button 2 and to see the correct answer. 
+Then click on the "Right" or the "Wrong"
+button as appropriate.
+Repeat.
+</p>
+
+<p>
+Incorrectly answered questions are recycled.
+Others are removed from the deck.
+The program stops when all questions have been answered correctly.
+</p>
+
+<p>
+<hr>
+<form name="bForm">
+<center>
+<input type=button value="Click here to go back" onClick="history.back()">
+</center>
+</form>
+</p>
+
+<p>
+<font size=-1>If you want to make your own flash cards save this page to a file
+(use the File menu of the browser.)  Then look at the file with a text editor
+and follow the directions.</font>
+</p>
+
+</body>
+</html>

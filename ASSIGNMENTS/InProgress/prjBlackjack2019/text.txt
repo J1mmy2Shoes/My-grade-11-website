@@ -1,0 +1,1282 @@
+<!-- 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is the HTML page for our homepage
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+		<!-- css and font links -->
+		<link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="homepage.css">
+	</head>
+
+	<body>
+		<!-- Heading -->
+		<div id="heading">
+			<h1>BLACKJACK</h1>
+			<h2>By: James Billinger & Yi Bo Cheng</h2>
+		</div>
+		<!-- Links -->
+		<div id="links">
+			<a href="subPages/testChart.html"><b>Testing Chart</b></a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<a href="index.html"><b>THE GAME</b></a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<a href="subPages/screenshots.html"><b>Screenshots</b></a><br><br>
+			<a href="text.txt"><b>Text</b></a>
+		</div>
+		<!-- About -->
+		<div id="about">
+			<img src="images/gif.gif" id="gif">
+			<h2>About the Game</h2>
+			<p>
+				The goal of Blackjack is have your total card value closest to 21. If you go over 21, you LOSE. In this game, you are able to bet money. You are given $1000 to start with and you can choose the disired amount to bet. However, if your bank goes empty, it's game over.
+			</p>
+			<h2>Inspiration</h2>
+			<p>
+				Our game is based on episode 34 and 35 in the <i>JoJo's Bizarre Adventure: Stardust Crusaders: Season 2</i> anime. This anime is about Jotaro Kujo, the main protagonist of the show, along with his crew, travelling to Egypt to defeat Dio Brando, an immortal vampire that wants to kill off the entire Jostar bloodline. Upon Jotaro's arrival in Egypt, they quickly encounter one of Dio's servants, <b>Daniel J. D'Arby</b>.
+			</p>
+			<img src="images/description.png">
+			<h2>About Daniel J. D'Arby</h2>
+			<p>
+				A servent of Dio that loves to gamble. He is a gambler that is very confident in his ability in card games, especially Poker. He processes a deadly stand named "The Osiris" which has the ability to take souls of the oponents he defeat in chips. D'arby's mission is to defend Dio by defeating Jotaro's crew in a poker game. 
+			</p>
+		</div>
+	</body>
+</html>
+/*	
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our CSS page for our homepage
+*/
+body{
+	background-color: #292826;
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 300%;
+	color: #f9d342;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px
+}
+p{
+	font-family: 'Metrophobic', sans-serif;
+	line-height: 25px;
+}
+/* Links */
+#links{
+	margin-top: 75px;
+}
+#links a{
+	text-decoration: underline;
+	color: #f9d342;
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 20px;
+}
+/* About */
+#gif{
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+#about h2{
+	text-decoration: underline;
+}
+#about p{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#about img{
+	width: 25%;
+	height: 30%;
+	border: solid black 5px;
+	border-radius: 10px;
+}
+<!-- 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is the HTML page for our screenshots page
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Screenshots</title>
+		<!-- fonts and css link -->
+		<link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		<!-- Home button -->
+		<div id="home">
+			<a href="../homepage.html">
+				<img src="../images/home.png" width="50" height="50">
+			</a>
+		</div>
+		<!-- Heading -->
+		<h1>Screenshots</h1>
+		<!-- Table of screenshots -->
+		<div id="screenshots">
+			<table>
+				<tr>
+					<th>Screenshot</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/start.png"></td>
+					<td>This is the starting screen. It includes the rules and instructions needed to play the game</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/intro.png"></td>
+					<td>This page introduces D'Arby</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/cards.jpg"></td>
+					<td>This is where the gameplay happens</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/lose.png"></td>
+					<td>This screen will appear when you LOSE</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/win.jpg"></td>
+					<td>This screen will appear when you WIN</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/tie.png"></td>
+					<td>This screen will appear when you TIE</td>
+				</tr>
+				<tr>
+					<td><img src="../screenshots/gameover.jpg"></td>
+					<td>This screen will appear when you lose all your money</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+<!-- 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is the HTML page for our testing chart page
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Chart</title>
+		<!-- css and font links -->
+		<link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		<!-- Heading -->
+		<h1>TESTING CHART</h1>
+		<div id="home">
+			<a href="../homepage.html">
+				<img src="../images/home.png" width="50" height="50">
+			</a>
+		</div>
+		<!-- Test chart -->
+		<div id="testingChart">
+			<table>
+				<tr>
+					<th>Test</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>Unable to bet invalid amounts (negatives, NaN, amounts larger than bank etc.)</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Game over when money runs out</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>After pressing the bet button, money is subtracted from bank</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Bet money is doubled and added to bank if round is won</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Bet money is added back to band if round is tied</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Bet money remains the same if round is lost</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Cards cannot be drawn if player card value is already at 21</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Player cannot hit more cards when all cards are flipped</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>No repeating cards</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Game is tied when both values are the same</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Round is lost when card value is over 21</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Round is lost when dealer value is closer to 21</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Round is won when dealer's card value exceeds 21</td>
+					<td>Completed</td>
+				</tr>
+				<tr>
+					<td>Dealer card value is always above 17 or more</td>
+					<td>Completed</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+/*	
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our CSS page for our testing chart and screenshot pages
+*/
+body{
+	background-color: #292826;
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: 'Metrophobic', sans-serif;
+	color: #f9d342;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+/* Home button */
+#home{
+	float: left;
+	position: fixed;
+}
+/* Testing and screenshot charts*/
+table{
+	border-collapse: collapse;
+	border: solid;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+td{
+	border: solid;
+	padding: 10px;
+}
+th{
+	border: solid;
+}
+#testingChart{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 25px;
+}
+#screenshots{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 25px;
+}
+/* Screenshots */
+#screenshots img{
+	width: 100%;
+	height: 65%;
+}
+<!-- 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our HTML page for our game
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blackjack</title>
+		<!-- jQuery and javascript links -->
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="code.js"></script>
+		<!-- css link -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<!-- Decorations and bank -->
+		<img id="chips" src="images/goodChips.png">
+		<label id="lblMoney" class="heading">$ 1000</label>	
+		<center>
+			<!-- Player cards elements -->
+			<div id="playerElements">
+				<h1 id="h1PlayerCards" class="cardheadings">Player Cards</h1>
+				<p id="playerCardValue">Card Value:</p>
+				<div id="playerCards">			
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard1" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard2" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard3" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard4" class="card">
+					<img src="cards/cards/card55.JPG" id="imgPlayerCard5" class="card">
+					<br>
+				</div>
+			</div>
+			<!-- Dealer card elements -->
+			<div id="dealerElements">
+				<h1 id="h1DealerCards" class="cardheadings">Dealer Cards</h1>
+				<p id="dealerCardValue">Card Value:</p>
+				<div id="dealerCards">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard1" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard2" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard3" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard4" class="card">
+					<img src="cards/cards/card55.JPG" id="imgDealerCard5" class="card">
+				</div>
+			</div>
+			<!-- Darby textbox -->
+			<div id="textBox">
+				<div id="status"></div>
+				<img id="imgTextBox" src="images/textbox.png">
+			</div>
+			<!-- Game buttons -->
+			<div id="btns">
+				<button id="btnPlay" class="button"><b>Play!</b></button>
+				<button id="btnBet" class="button">Place bet ($):</button>
+				<button id="btnDeal" class="button">Deal</button>
+				<button id="btnHit" class="button">Hit</button>
+				<button id="btnStand" class="button">Stand</button>
+			</div>
+			<button id="btnRepeat" class="button">Play Again</button>
+			<!-- bet elements -->
+			<div id="betting">
+				<input type="text" id="txtBet"><br><br>
+			</div>
+			<!-- POPUPS -->
+			<!-- Start popup -->
+			<div id="startPopup">
+				<div id="startPopupContent">
+	
+					<h1 id="h1heading" class="heading">D'Arby's Blackjack</h1><br>
+					<h2>Game Rules</h2>
+					<p>
+						<u>How to play:</u><br>
+						The goal of the game is to beat the dealer(D'Arby) but at the same time not to go over 21.<br> 
+						•	Face cards are 10 and any other card is its pip value.<br>
+						•	You will first be assigned two cards.<br>
+						•	The dealer also deals him/herself two cards, only one of which you will be able to see.<br>
+						•	You will then have to decide whether or not to draw more cards.<br> 
+						•	After making this decision, the cards will be revealed and your total will be compared to that of the dealer.<br>
+						•	Whoever gets closest to 21 without going over wins the game.<br>
+						•	At the time you make the decision to draw or not to draw, you will also place a bet.<br>
+						•	If you win, you receive double the amount that you bet.<br> 
+						•	The player starts off with $1000.<br> 
+						•	If you lose all your money D'Arby will steal your soul.<br>
+					</p>
+					<img src="images/iSee.png" id="imgISee">
+				</div>	
+			</div>
+			<!-- Lose popup -->
+			<div id="losePopup">
+				<div id="losePopupContent">
+					<h1>You LOSE!</h1>
+					<img src="images/darbyLose.png" width="700" height="500">
+					<button id="btnViewLose" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Win popup -->
+			<div id="winPopup">
+				<div id="winPopupContent">
+					<h1>You WIN!</h1>
+					<img src="images/winImage.jpg" width="700" height="500">
+					<button id="btnViewWin" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Tie popup -->
+			<div id="tiePopup">
+				<div id="tiePopupContent">
+					<h1>You TIED!</h1>
+					<img src="images/tieImage.jpg" width="700" height="500">
+					<button id="btnViewTie" class="buttonPopup">View Results</button>
+				</div>
+			</div>
+			<!-- Gameover popup -->
+			<div id="gameoverPopup">
+				<div id="gameoverPopupContent">
+					<h1>GAME OVER</h1>
+					<img src="images/gameOver.jpg" width="1000" height="720">
+					<button id="btnGameover" class="buttonPopup">Reload Game</button>
+				</div>
+			</div>
+			<!-- Play popup -->
+			<div id="playPopup">
+				<div id="playPopupContent">
+					<img src="images/darbyPNG.png">
+					<p class="japanese">
+						こんにちは。私の名前はダービーです、そして私はブラックジャックのゲームにあなたに挑戦します。知性と技能のこの激しい戦いにおいて、私たちは私たちのお金を賭けるだけでなく、私たちの魂も賭けるでしょう。今来て、あなたの存在のあらゆる繊維と私と戦ってください。
+					</p><br>
+					<p>
+						(Hello there my friend. My name is D"Arby and I challenge you to a game of Blackjack. In this intense battle of intellect and skill we shall not only bet our money, but our souls as well. Now come, fight me with every fibre of your being.)
+					</p>
+					<button id="btnGo" class="buttonPopup">Fight!</button>
+				</div>
+			</div>
+		</center>
+		<label id="music"><b>Toggle ingame music:</b></label><br>
+		<audio autoplay="" controls="">
+			<source src="sounds/brunoTheme.mp3" type="audio/mpeg">
+		</audio> 
+	</body>
+</html>
+/*
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our CSS page for our game
+*/
+body{
+	background-image: url(images/darbyBackground.png);
+	opacity: 1;
+	margin-bottom: 10%;
+	overflow-y: hidden;
+	background-attachment: fixed;
+	background-position: center; 
+	font-family:georgia,garamond,serif;
+}
+/* Sound */
+audio{
+	
+    right: 5%;
+    position: fixed;
+    bottom: 10%;
+}
+#music{
+	font-size: 175%;
+	color: white;
+	background-color: black;
+	right: 3.5%;
+    position: fixed;
+    bottom: 17%;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* Buttons */
+#btns{
+	height: 10%;
+}
+#btnBet{
+	position: fixed;
+	left: 8%;
+	top: 48%;
+	width: 300px;
+}
+.button{
+	width: 10%;
+	color: white;
+	font-size: 30px;
+	background-image: url(images/stars.png);
+	background-size: cover;
+}
+button:hover{
+	border: 2px solid white;
+}
+#btnPlay{
+	width: 20%;
+	height: 10%;
+	position: fixed;
+	left: 40%;
+	top: 55%;
+	color: white;
+	-webkit-text-stroke: 2px black;
+	font-size: 200%;
+	background-image: url(images/buttons.jpg);
+	background-size: cover;
+}
+#btnRepeat{
+	background-image: none;
+	background-color: red;
+	width: 400px;
+}
+/* Headings */
+.cardheadings{
+	background-color: #496693;
+	padding: 3px;
+	display: inline-block;
+	margin-top: 50px;
+	color: #c5d64d;
+	border-radius: 10px;
+}
+.cardheadings h1{
+	font-size: 50%;
+}
+#dealerCardValue{
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	margin-left: 40%;
+	margin-right: 40%;
+	border-radius: 10px;
+}
+#playerCardValue{
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	margin-left: 40%;
+	margin-right: 40%;
+	border-radius: 10px;
+}
+/* Bet elements */
+#betting{
+	background-image: url(images/dice.jpg);
+	background-size: cover;
+	display: inline-block;
+	padding: 0.5%;
+	border-radius: 5px;
+	position: fixed;
+	top: 40%;
+	left: 5%;
+	width: 20%;
+	border-style: solid;
+}
+#lblMoney{
+	font-size: 225%;
+	left: 15%;
+	position: fixed;
+	top: 7%;
+	width: 10%;
+}
+/* Cards */
+#pCards{
+	border-radius: 10px;
+}
+#playerCards img{
+	border-radius: 10px;
+}
+#dealerCards img{
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.card{
+	width: 8%;
+}
+/* Text Box */
+#imgTextBox{
+	width: 30%;
+	height: 30%;
+	position: fixed;
+	right: 2%;
+	top: 0%;
+}
+#status{
+	background-color: white;
+	width: 30%;
+	height: 22.5%;
+	position: fixed;
+	right: 2%;
+	top: 0%;
+	border-radius: 33px;
+	font-size: 70%;
+}
+/* Popup Buttons */
+.buttonPopup{
+	width: 25%;
+	color: black;
+	font-size: 120%;
+}
+#btnGo{
+	margin-top: 2%;
+}
+/* Start popup styles */
+#startPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/popup.jpg);
+}
+#startPopupContent{
+	width: 75%;
+	height: 75%;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white; 
+	margin: auto;
+	margin-top: 75px;
+	padding: 30px;
+	font-size: 18.5px;
+}
+#startPopupContent img{
+	width: 220px;
+	height: 30%;
+	border: solid black;
+	border-radius: 10px;
+	opacity: 0.6;
+}
+.heading{
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+}
+/* Lose popup styles */
+#losePopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/darkBackground.png");
+}
+#losePopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Win popup styles */
+#winPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/winBackground.png);
+	background-size: cover;
+}
+#winPopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Tie popup styles */
+#tiePopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/tieBackground.png);
+}
+#tiePopupContent{
+	width: 700px;
+	height: 550px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+/* Gameover popup styles */
+#gameoverPopup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/gameOverBackground.jpg)
+}
+#gameoverPopupContent{
+	width: 1000px;
+	height: 740px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: white;
+}
+/* Play popup */
+#playPopup{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/tieBackground.png)
+}
+#playPopupContent{
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	width: 50%;
+	height: 60%;
+	border-width: 2px;
+	background-image: url(images/purple.jpg); 
+	padding: 5%;
+	font-size: 100%;
+	color: #989b45;
+	border: solid black;
+	border-radius: 50px;
+}
+#playPopupContent img{
+	width: 90%;
+}
+.japanese{
+	font-size: 75%;
+}
+/* decorations */
+#chips{
+	height: 20%;
+	width: 15%;
+	position: fixed;
+}
+/* 
+	James Billinger
+	Yi Bo Cheng
+	04/18/2019
+	This is our JavaScript page for our game
+*/
+$(document).ready(function($){
+	/* Game VARIABLES */
+	//player variables
+	let cardPlayerValue1=0;
+	let cardPlayerValue2=0;
+	let cardPlayerValue3=0;
+	let cardPlayerValue4=0;
+	let cardPlayerValue5=0;
+
+	let cardPlayerValueTotal=0;
+
+	let cardPlayer1FileName="";
+	let cardPlayer2FileName="";
+	let cardPlayer3FileName="";
+	let cardPlayer4FileName="";
+	let cardPlayer5FileName="";
+	
+	let card1FilePath="";
+	let card2FilePath="";
+	let card3FilePath="";
+	let card4FilePath="";
+	let card5FilePath="";
+	
+	let pCardCount=0;
+	
+	//dealer variables
+	let cardDealerValue1=0;
+	let cardDealerValue2=0;
+	let cardDealerValue3=0;
+	let cardDealerValue4=0;
+	let cardDealerValue5=0;
+	
+	let cardDealerValueTotal=0;
+	
+	let cardDealer1FileName="";
+	let cardDealer2FileName="";
+	let cardDealer3FileName="";
+	let cardDealer4FileName="";
+	let cardDealer5FileName="";
+	
+	let dCard1FilePath="";
+	let dCard2FilePath="";
+	let dCard3FilePath="";
+	let dCard4FilePath="";
+	let dCard5FilePath="";
+	
+	let dCardCount=0;
+
+	//round counter
+	let roundCounter=1;
+	
+	//bet check
+	let betCheck=0;
+	
+	//money variables
+	let money=1000;
+	let bet=0;
+	
+	//hide buttons
+	$("#btnBet").hide();
+	$("#btnDeal").hide();
+	$("#btnHit").hide();
+	$("#btnStand").hide();
+	$("#btnRepeat").hide();
+	$("#btnPlay").hide();
+
+	//hide textbox
+	$("#textBox").hide();
+
+	//bet menu hide
+	$("#divBet").hide();
+	$("#chips").hide();
+	$("#lblMoney").hide();
+	$("#betting").hide();
+
+	//audio hide
+	$("#music").hide();
+	$("audio").hide();
+
+	//popup hide
+	$("#losePopup").hide();
+	$("#winPopup").hide();
+	$("#tiePopup").hide();
+	$("#gameoverPopup").hide();
+	$("#playPopup").hide();
+	
+	//hide cards
+	$("#playerElements").hide();
+	$("#dealerElements").hide();
+
+	//start popup fade in 
+	$("#startPopup").hide();
+	$("#startPopup").fadeIn();
+
+	//mouse enter
+	$("#imgISee").mouseenter(function(event){
+		$("#imgISee").css("opacity","1");//increases opacity of image when mouse enters
+	});//end of imgISee mouseenter
+	
+	//mouse leave
+	$("#imgISee").mouseleave(function(event){
+		$("#imgISee").css("opacity","0.6");//returns to original opacity when mouse leaves
+	});//end of imgISee mouseleave
+
+	//click
+	$("#imgISee").click(function(event){
+		$("#startPopup").fadeOut();
+		$("#textBox").delay(400);
+		$("#textBox").fadeIn();
+		$("#status").html("<h1><br>ブラックジャックへようこそ。<br>(Welcome to Blackjack)</h1>");
+		$("#btnPlay").delay(1000);
+		$("#btnPlay").fadeIn();
+	});//end of imgISee click
+
+	//play button
+	$("#btnPlay").click(function(event){
+		$("#playPopup").fadeIn();//fade in play popup
+	});//end of btnPlay click
+	
+	//go/fight button
+	$("#btnGo").click(function(event){
+		$("#playPopup").fadeOut();//fade out play popup
+		$("#playerElements").fadeIn();//fade in player cards
+		$("#dealerElements").fadeIn();//fade in dealer cards
+		$("#btnBet").fadeIn();//fade in bet button
+		$("#btnPlay").hide();//hide play button
+		$("#divBet").fadeIn();//bet elements fade in
+		$("#textBox").hide();//hide text box
+		$("#chips").fadeIn();
+		$("#lblMoney").fadeIn();
+		$("#betting").fadeIn();
+		$("#music").fadeIn();
+		$("audio").fadeIn();
+	});//end of btnGo click
+
+	//bet button
+	$("#btnBet").click(function(event){
+		bet=+$("#txtBet").val(); //get bet value from txtBet;
+		betCheck=bet/bet;//this ensures the player does not input a letter for bet
+		if(bet>money||bet<=0||betCheck!=1) //if user enters invalid number, retry
+		{
+			$("#textBox").fadeIn(750);
+			$("#textBox").delay(1750);
+			$("#status").html("<h1>あなたはばか！有効な額を賭けるか、私の立場で敗北させてください[Oasis].<br>(You fool! Bet a valid amount or be defeated by my stand [Oasis].) </h1>");
+			$("#status").css("font-size","70%");
+			$("#textBox").fadeOut();
+			$("#btnBet").hide();//disables the bet button so the textbox does not appear after betting if the btn is spammed
+			$("#btnBet").delay(2500);//delays the btn to prevent spam
+			$("#btnBet").fadeIn();
+		}
+		else{
+			money-=bet; //determine value of players money
+			$("#lblMoney").html("$"+money); //display amount of money
+			$("#btnDeal").fadeIn();
+			$("#btnBet").hide();
+			$("#textBox").hide();//hides warning textbox if bet is entered correctly
+			$("#betting").hide();
+		}		
+	});//end btnBet click
+
+	//deal button
+	$("#btnDeal").click(function(event){
+		/* PLAYER CARDS */
+		/* Player Card 1 */
+		if(pCardCount==0&&cardPlayerValueTotal<21)//ensures total value is less than 21
+		{
+			cardPlayerValue1=Math.round(1+Math.random()*51);
+			cardPlayer1FileName="card"+cardPlayerValue1+".JPG";
+			card1FilePath="cards/cards/"+cardPlayer1FileName;
+			$("#imgPlayerCard1").prop("src",card1FilePath);
+			/*CARD 1 VALUE*/
+			cardPlayerValue1=Math.round(cardPlayerValue1%13);//calculating card value
+			if(cardPlayerValue1==11||cardPlayerValue1==12||cardPlayerValue1==0)//K,Q,J has value of 10
+			{
+				cardPlayerValue1=10;
+			}
+			cardPlayerValueTotal+=cardPlayerValue1;//adds card 1 value to total
+			$("#playerCardValue").html("<p>"+cardPlayerValueTotal+"</p>");
+			pCardCount++;
+		}
+		/* Player Card 2 */
+		if(pCardCount==1&&cardPlayerValueTotal<21)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardPlayerValue2=Math.round(1+Math.random()*51);
+				cardPlayer2FileName="card"+cardPlayerValue2+".JPG";
+				card2FilePath="cards/cards/"+cardPlayer2FileName;
+				$("#imgPlayerCard2").prop("src",card2FilePath);
+			} while(cardPlayerValue1==cardPlayerValue2);
+			/*CARD 2 VALUE*/
+			cardPlayerValue2=Math.round(cardPlayerValue2%13);//calculating card value
+			if(cardPlayerValue2==11||cardPlayerValue2==12||cardPlayerValue2==0)//K,Q,J has value of 10
+			{
+				cardPlayerValue2=10;
+			}
+			cardPlayerValueTotal+=cardPlayerValue2;//adds card 2 value to total
+			$("#playerCardValue").html("<p>"+cardPlayerValueTotal+"</p>");
+			pCardCount++;
+		}
+		/* DEALER CARDS */
+		/* Dealer Card 1*/
+		if(dCardCount==0)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardDealerValue1=Math.round(1+Math.random()*51);
+				cardDealer1FileName="card"+cardDealerValue1+".JPG";
+				dCard1FilePath="cards/cards/"+cardDealer1FileName;
+				$("#imgDealerCard1").prop("src",dCard1FilePath);
+			} while(cardDealerValue1==cardPlayerValue1||cardDealerValue1==cardPlayerValue2)
+			/*CARD 1 VALUE*/
+			cardDealerValue1=Math.round(cardDealerValue1%13);//calculating card value
+			if(cardDealerValue1==11||cardDealerValue1==12||cardDealerValue1==0)//K,Q,J has value of 10
+			{
+				cardDealerValue1=10;
+			}
+			cardDealerValueTotal+=cardDealerValue1;//adds card 1 value to total
+			$("#dealerCardValue").html("<p>"+cardDealerValueTotal+"</p>");
+			dCardCount++;
+		}
+		$("#btnDeal").hide();
+		$("#btnHit").fadeIn();
+		$("#btnStand").fadeIn();
+	});//end of btnDeal
+
+	//hit button
+	$("#btnHit").click(function(event){
+		/* Player Card 3*/
+		if(pCardCount==2&&cardPlayerValueTotal<21)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardPlayerValue3=Math.round(1+Math.random()*51);
+				cardPlayer3FileName="card"+cardPlayerValue3+".JPG";
+				card3FilePath="cards/cards/"+cardPlayer3FileName;
+				$("#imgPlayerCard3").prop("src",card3FilePath);
+			} while(cardPlayerValue3==cardPlayerValue2||cardPlayerValue3==cardPlayerValue1);//ensures no repeating cards
+			/*CARD 3 VALUE*/
+			cardPlayerValue3=Math.round(cardPlayerValue3%13);//calculating card value
+			if(cardPlayerValue3==11||cardPlayerValue3==12||cardPlayerValue3==0)//K,Q,J has value of 10
+			{
+				cardPlayerValue3=10;
+			}
+			cardPlayerValueTotal+=cardPlayerValue3;//adds card 3 value to total
+			$("#playerCardValue").html("<p>"+cardPlayerValueTotal+"</p>");
+			pCardCount++;
+		}
+		/* Player Card 4*/
+		else if(pCardCount==3&&cardPlayerValueTotal<21)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardPlayerValue4=Math.round(1+Math.random()*51);
+				cardPlayer4FileName="card"+cardPlayerValue4+".JPG";
+				card4FilePath="cards/cards/"+cardPlayer4FileName;
+				$("#imgPlayerCard4").prop("src",card4FilePath);
+			} while(cardPlayerValue4==cardPlayerValue1||cardPlayerValue4==cardPlayerValue2||cardPlayerValue4==cardPlayerValue3);
+			/*CARD 4 VALUE*/
+			cardPlayerValue4=Math.round(cardPlayerValue4%13);//calculating card value
+			if(cardPlayerValue4==11||cardPlayerValue4==12||cardPlayerValue4==0)//K,Q,J has value of 10
+			{
+				cardPlayerValue4=10;
+			}
+			cardPlayerValueTotal+=cardPlayerValue4;//adds card 4 value to total
+			$("#playerCardValue").html("<p>"+cardPlayerValueTotal+"</p>");
+			pCardCount++;
+		}
+		/* Player Card 5*/
+		else if(pCardCount==4&&cardPlayerValueTotal<21)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardPlayerValue5=Math.round(1+Math.random()*51);
+				cardPlayer5FileName="card"+cardPlayerValue5+".JPG";
+				card5FilePath="cards/cards/"+cardPlayer5FileName;
+				$("#imgPlayerCard5").prop("src",card5FilePath);
+			} while(cardPlayerValue5==cardPlayerValue1||cardPlayerValue5==cardPlayerValue2||cardPlayerValue5==cardPlayerValue3||cardPlayerValue5==cardPlayerValue4);
+			/*CARD 5 VALUE*/
+			cardPlayerValue5=Math.round(cardPlayerValue5%13);//calculating card value
+			if(cardPlayerValue5==11||cardPlayerValue5==12||cardPlayerValue5==0)//K,Q,J has value of 10
+			{
+				cardPlayerValue5=10;
+			}
+			cardPlayerValueTotal+=cardPlayerValue5;//adds card 5 value to total
+			$("#playerCardValue").html("<p>"+cardPlayerValueTotal+"</p>");
+			pCardCount++;
+		}
+		else if(pCardCount==5&&cardPlayerValueTotal<21)//player cannot hit when all cards are flipped 
+		{
+			$("#status").html("<h1>You are out of cards to hit. You must STAND.</h1>");//changes textbox content
+			$("#textBox").fadeIn();
+			$("#textBox").delay(2000);
+			$("#textBox").fadeOut();
+			$("#btnHit").fadeOut();
+		}
+		else if(cardPlayerValueTotal==21)//player cannot hit when value is 21
+		{
+			$("#status").html("<h1>Your card value is at 21. You must STAND.</h1>");
+			$("#textBox").fadeIn();
+			$("#textBox").delay(2000);
+			$("#textBox").fadeOut();
+			$("#btnHit").fadeOut();
+		}
+		/* Lose Check */
+		if(cardPlayerValueTotal>21)
+		{
+			$("#losePopup").fadeIn();
+			$("#btnHit").hide();
+			$("#btnStand").hide();
+		}
+	});//end of btnHit click
+
+	//stand button
+	$("#btnStand").click(function(event) {
+		/* DEALER CARDS */
+		/* Dealer Card 2*/
+		if(dCardCount==1&&cardDealerValueTotal<16)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardDealerValue2=Math.round(1+Math.random()*51);
+				cardDealer2FileName="card"+cardDealerValue2+".JPG";
+				dcard2FilePath="cards/cards/"+cardDealer2FileName;
+				$("#imgDealerCard2").prop("src",dcard2FilePath);
+			} while (cardDealerValue2==cardPlayerValue1||cardDealerValue2==cardPlayerValue2||cardDealerValue2==cardPlayerValue3||cardDealerValue2==cardPlayerValue4||cardDealerValue2==cardPlayerValue5||cardDealerValue2==cardDealerValue1);
+			/*CARD 2 VALUE*/
+			cardDealerValue2=Math.round(cardDealerValue2%13);//calculating card value
+			if(cardDealerValue2==11||cardDealerValue2==12||cardDealerValue2==0)//K,Q,J has value of 10
+			{
+				cardDealerValue2=10;
+			}
+			cardDealerValueTotal+=cardDealerValue2;//adds card 2 value to total
+			$("#dealerCardValue").html("<p>"+cardDealerValueTotal+"</p>");
+			dCardCount++;
+		}
+		/* Dealer Card 3*/
+		if(dCardCount==2&&cardDealerValueTotal<16)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardDealerValue3=Math.round(1+Math.random()*51);
+				cardDealer3FileName="card"+cardDealerValue3+".JPG";
+				dcard3FilePath="cards/cards/"+cardDealer3FileName;
+				$("#imgDealerCard3").prop("src",dcard3FilePath);
+			} while (cardDealerValue3==cardPlayerValue1||cardDealerValue3==cardPlayerValue2||cardDealerValue3==cardPlayerValue3||cardDealerValue3==cardPlayerValue4||cardDealerValue3==cardPlayerValue5||cardDealerValue3==cardDealerValue1||cardDealerValue3==cardDealerValue2);
+			/*CARD 3 VALUE*/
+			cardDealerValue3=Math.round(cardDealerValue3%13);//calculating card value
+			if(cardDealerValue3==11||cardDealerValue3==12||cardDealerValue3==0)//K,Q,J has value of 10
+			{
+				cardDealerValue3=10;
+			}
+			cardDealerValueTotal+=cardDealerValue3;//adds card 3 value to total
+			$("#dealerCardValue").html("<p>"+cardDealerValueTotal+"</p>")
+			dCardCount++;
+		}
+		/* Dealer Card 4*/
+		if(dCardCount==3&&cardDealerValueTotal<16)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardDealerValue4=Math.round(1+Math.random()*51);
+				cardDealer4FileName="card"+cardDealerValue4+".JPG";
+				dcard4FilePath="cards/cards/"+cardDealer4FileName;
+				$("#imgDealerCard4").prop("src",dcard4FilePath);
+			} while (cardDealerValue4==cardPlayerValue1||cardDealerValue4==cardPlayerValue2||cardDealerValue4==cardPlayerValue3||cardDealerValue4==cardPlayerValue4||cardDealerValue4==cardPlayerValue5||cardDealerValue4==cardDealerValue1||cardDealerValue4==cardDealerValue2||cardDealerValue4==cardDealerValue3);
+			/*CARD 4 VALUE*/
+			cardDealerValue4=Math.round(cardDealerValue4%13);//calculating card value
+			if(cardDealerValue4==11||cardDealerValue4==12||cardDealerValue4==0)//K,Q,J has value of 10
+			{
+				cardDealerValue4=10;
+			}
+			cardDealerValueTotal+=cardDealerValue4;//adds card 4 value to total
+			$("#dealerCardValue").html("<p>"+cardDealerValueTotal+"</p>");
+			dCardCount++;
+		}
+		/* Dealer Card 5*/
+		if(dCardCount==4&&cardDealerValueTotal<16)
+		{
+			do{ //keeps rerolling card if card value repeated
+				cardDealerValue5=Math.round(1+Math.random()*51);
+				cardDealer5FileName="card"+cardDealerValue5+".JPG";
+				dcard5FilePath="cards/cards/"+cardDealer5FileName;
+				$("#imgDealerCard5").prop("src",dcard5FilePath);
+			} while (cardDealerValue5==cardPlayerValue1||cardDealerValue5==cardPlayerValue2||cardDealerValue5==cardPlayerValue3||cardDealerValue5==cardPlayerValue4||cardDealerValue5==cardPlayerValue5||cardDealerValue5==cardDealerValue1||cardDealerValue5==cardDealerValue2||cardDealerValue5==cardDealerValue3||cardDealerValue5==cardDealerValue4);
+			/*CARD 5 VALUE*/
+			cardDealerValue5=Math.round(cardDealerValue5%13);//calculating card value
+			if(cardDealerValue5==11||cardDealerValue5==12||cardDealerValue5==0)//K,Q,J has value of 10
+			{
+				cardDealerValue5=10;
+			}
+			cardDealerValueTotal+=cardDealerValue5;//adds card 5 value to total
+			$("#dealerCardValue").html("<p>"+cardDealerValueTotal+"</p>");
+			dCardCount++;
+		}
+		/* Checking results */
+		if(cardDealerValueTotal==21&&cardPlayerValueTotal!=21)//lose 
+		{
+			$("#losePopup").fadeIn();
+		}
+		else if(cardDealerValueTotal>cardPlayerValueTotal&&cardDealerValueTotal<21)//lose
+		{
+			$("#losePopup").fadeIn();
+		}
+		else if(cardDealerValueTotal<cardPlayerValueTotal&&cardDealerValueTotal<21)//win
+		{
+			bet*=2;
+			money+=bet;
+			$("#lblMoney").html("$"+money); //display amount of money
+			$("#winPopup").fadeIn();
+		}
+		else if(cardDealerValueTotal==cardPlayerValueTotal)//tie
+		{
+			money+=bet;
+			$("#lblMoney").html("$"+money); //display amount of money
+			$("#tiePopup").fadeIn();
+		}
+		else if(cardDealerValueTotal==21&&cardPlayerValueTotal==21)//tie
+		{
+			money+=bet;
+			$("#lblMoney").html("$"+money); //display amount of money
+			$("#tiePopup").fadeIn();
+		}
+		else if(cardDealerValueTotal>21)//win
+		{
+			bet*=2;
+			money+=bet;
+			$("#lblMoney").html("$"+money); //display amount of money
+			$("#winPopup").fadeIn();
+		}
+		$("#btnHit").hide();
+		$("#btnStand").hide();
+		$("#music").hide();
+		$("audio").hide();
+	});//end of btnStand Click
+
+	//view results (when lost) button	
+	$("#btnViewLose").click(function(event){
+		$("#losePopup").fadeOut(1000);
+		$("#btnRepeat").fadeIn(1000);
+		$("#music").fadeIn();
+		$("audio").fadeIn();
+	});//end of btnViewLose click
+	
+	//view results (when won) button
+	$("#btnViewWin").click(function(event){
+		$("#winPopup").fadeOut(1000);
+		$("#btnRepeat").fadeIn(1000);
+		$("#music").fadeIn();
+		$("audio").fadeIn();
+	});//end of btnViewWin click
+	
+	//view results (when tie) button
+	$("#btnViewTie").click(function(event){
+		$("#tiePopup").fadeOut(1000);
+		$("#btnRepeat").fadeIn(1000);
+		$("#music").fadeIn();
+		$("audio").fadeIn();
+	});//end of btnViewTie click
+
+	//play again button
+	$("#btnRepeat").click(function(event){
+
+		if(money>0)
+		{
+			//round counter
+			roundCounter++;
+
+			//empty bet input
+			$("#txtBet").val("");
+
+			//hide buttons
+			$("#btnDeal").hide();
+			$("#btnHit").hide();
+			$("#btnStand").hide();
+			$("#btnRepeat").hide();
+
+			//status box reset
+			$("#status").fadeIn();
+			$("#status").html("Welcome to round " +roundCounter)
+
+			//card value count reset
+			$("#dealerCardValue").html("<p>0</p>");
+			$("#playerCardValue").html("<p>0</p>");
+
+			//cards reset 
+			$("#imgPlayerCard1").prop("src","cards/cards/card55.JPG");
+			$("#imgPlayerCard2").prop("src","cards/cards/card55.JPG");
+			$("#imgPlayerCard3").prop("src","cards/cards/card55.JPG");
+			$("#imgPlayerCard4").prop("src","cards/cards/card55.JPG");
+			$("#imgPlayerCard5").prop("src","cards/cards/card55.JPG");
+
+			$("#imgDealerCard1").prop("src","cards/cards/card55.JPG");
+			$("#imgDealerCard2").prop("src","cards/cards/card55.JPG");
+			$("#imgDealerCard3").prop("src","cards/cards/card55.JPG");
+			$("#imgDealerCard4").prop("src","cards/cards/card55.JPG");
+			$("#imgDealerCard5").prop("src","cards/cards/card55.JPG");
+			
+			//card count reset
+			dCardCount=0;
+		 	pCardCount=0;
+		 	cardPlayerValueTotal=0;
+		 	cardDealerValueTotal=0;
+
+		 	//show bet button
+		 	$("#btnBet").fadeIn();
+		 	$("#betting").fadeIn();
+		}
+		//game over
+	 	else
+	 	{
+	 		$("#gameoverPopup").fadeIn();
+	 		$("#betting").fadeIn();
+	 		$("#music").hide();
+			$("audio").hide();
+	 	}
+	});//end of btnRepeat click
+
+	//relaod game (when game over) button
+	$("#btnGameover").click(function(event){
+		location.reload(true);//reloads game
+	});//end of btnGameover click
+});//end of doc ready

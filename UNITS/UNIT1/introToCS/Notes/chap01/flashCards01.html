@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--  INSTRUCTIONS FOR MAKING YOUR OWN FLASH CARDS:
+<p>
+1.  Modify this file with a text editor, such as Notepad.
+
+2.  Each card consists of a questions[] answers[] pair.
+ 
+3.  The cards are numbered from 0 to N-1.
+
+4.  For each questions[] line, enter a question between the quote marks 
+      (replacing what is already there.)  Keep everything on one line.
+
+8.  For its answers[] line, enter the answer between the quote marks 
+      (replacing what is already there.)  Keep everything on one line.
+
+9.  Delete any extra pairs you don't need, or add extra ones as needed.
+      (Use the editor's cut, copy, and paste to make this easy.)
+      Number added cards following the pattern of the first ones. 
+
+10. Change the line var numCards  = N to the number of cards you now have.
+      (Example: if you have 10 cards, they will be numbered 0 to 9 and
+      var NumCards = 10)
+
+11. Save the file.  Use a file name like "flashCards.html"  .
+
+12. Use the flash cards by clicking on the file name, or by opening them in
+    your browser.
+
+-->
+
+<html>
+<head>
+<title>Flashcards for Chapter 1</title>
+<meta name="copyright" content="2002,  Bradley Kjell">
+<meta name="author" content="Bradley Kjell kjell@ieee.org ">
+<meta name="robots" content="noindex,nofollow">
+<SCRIPT LANGUAGE="JavaScript">
+
+  var numCards  = 30                        // change this to the number of cards
+  var questions = new Array(numCards)
+  var answers   = new Array(numCards)
+  var asked     = new Array(numCards)
+  var qNumber
+
+  // The flash cards start here
+  questions[0] = "What is Hardware ?"
+  answers  [0] = "The tangible, physical parts of a computer system. "
+
+  questions[1] = "What is Software ?"
+  answers  [1] = "Data and computer programs. "
+
+  questions[2] = "What is the Systems Unit ?"
+  answers  [2] = "The rectangular box that holds most of a computer's electronics."
+
+  questions[3] = "What computer system component does most of the computing?"
+  answers  [3] = "The processor chip"
+
+  questions[4] = "What type of memory is most closely connected to the processor?"
+  answers  [4] = "Main Memory"
+
+  questions[5] = "What type of memory is used for long-term storage?"
+  answers  [5] = "Secondary Memory (hard disk)"
+
+  questions[6] = "What is another common name for main memory ?"
+  answers  [6] = "RAM (random access memory)"
+
+  questions[7] = "What category of memory is faster, main memory or secondary memory?"
+  answers  [7] = "Main Memory"
+
+  questions[8] = "An Input Device sends data _________ the system."
+  answers  [8] = "Into"
+
+  questions[9] = "What is I/O"
+  answers  [9] = "Input and Output"
+
+  questions[10] = "What is the name for a computer system that is permanently part of a larger device?"
+  answers  [10] = "Embedded System"
+
+  questions[11] = "What is ROM?"
+  answers  [11] = "Read-only memory, used to permanently keep special programs and data."
+
+  questions[12] = "What are the two categories of programs?"
+  answers  [12] = "Systems Programs and Application Programs."
+
+  questions[13] = "What program coordinates the hardware and software components of a computer system. "
+  answers  [13] = "Operating System"
+
+  questions[14] = "What is the name for starting up the operating system?"
+  answers  [14] = "Booting"
+
+  questions[15] = "What is formed when two or more computers are connected so that they can exchange programs and data?"
+  answers  [15] = "A network"
+
+  questions[16] = "What piece of hardware is used to connect computers into a network?"
+  answers  [16] = "Network Interface Card "
+
+  questions[17] = "What is a protocol?"
+  answers  [17] = "A set of rules about how computers represent and transmit data over a network."
+
+  questions[18] = "What is HTML?"
+  answers  [18] = "Hypertext Markup Language "
+
+  questions[19] = "What is a URL"
+  answers  [19] = "Uniform Resource Locator --- the address of a web page"
+
+  questions[20] = "What is a CPU"
+  answers  [20] = "Central Processing Unit --- another name for the processor."
+
+  questions[21] = "What is a small electronic device containing many transistors?"
+  answers  [21] = "integrated circuit (a processor or memory chip)"
+
+  questions[22] = "What type of memory has the largest capacity?"
+  answers  [22] = "secondary memory"
+
+  questions[23] = "What is the name for the electronics that controls an I/O device?"
+  answers  [23] = "device controller"
+
+  questions[24] = "Can both programs and data be kept in main memory?"
+  answers  [24] = "Yes"
+
+  questions[25] = "What is the computer that provides shared resources to a computer network?"
+  answers  [25] = "Server"
+
+  questions[26] = "When a network consists of computers that are geographically close together it is a .....?"
+  answers  [26] = "Local Area Network (LAN)"
+
+  questions[27] = "When a network consists of geographically distant computers it is a .... "
+  answers  [27] = "Wide Area Network (WAN)"
+
+  questions[28] = "What is the network that consists of many other networks connected together?"
+  answers  [28] = "The Internet"
+
+  questions[29] = "What is an address in a web page that points to another web page?"
+  answers  [29] = "A hyperlink"
+
+
+
+  // If you are making your own flashcards, do not modify anythin below this line.
+
+
+
+  // Initialize Variables
+
+  var state    = 0  // state 0 is question, state 1 is answer, 
+                    // state 2 is grade,    state 7 is final
+
+  for ( var j=0; j < asked.length; j++ ) asked[j] = 0
+
+function questionClick()
+{
+  var txt
+  var coin
+
+  if ( state == 0 )
+  {
+
+    coin = Math.floor( Math.random()*questions.length )
+    qNumber = coin
+
+    while ( asked[qNumber] == 1 && ((qNumber+1)%questions.length) != coin ) 
+      qNumber = (qNumber+1)%questions.length
+
+    if ( ((qNumber+1)%questions.length) == coin )
+    {
+      state = 7
+      txt = "You have gone through all the flash cards\n" 
+
+      txt +=  "Number of questions: " + document.aForm.count.value + "\n"
+      txt +=  "Number correct: " + document.aForm.numRight.value + "\n"
+      txt +=  "Percent correct: " +
+          Math.round((document.aForm.numRight.value*100)/document.aForm.count.value) + "\n"
+      document.aForm.questionArea.value = txt
+    }
+
+    else
+    {
+      state = 1
+      document.aForm.count.value++;
+      document.aForm.Counter.value = " " + document.aForm.count.value
+
+      document.aForm.questionArea.value  =  questions[qNumber] + "\n"
+      document.aForm.answerArea.value = " "
+    }
+
+  }
+}
+
+function answerClick()
+{
+  if ( state == 1 )
+  {
+    state = 2
+    document.aForm.answerArea.value =  answers[qNumber]
+  }
+}
+
+function rightClick()
+{
+  if ( state == 2 )
+  {
+    state = 0
+    document.aForm.numRight.value++
+    document.aForm.Right.value = " " + document.aForm.numRight.value
+    document.aForm.Wrong.value = " " + document.aForm.numWrong.value
+    asked[qNumber] = 1
+  }
+}
+
+function wrongClick()
+{
+  if ( state == 2 )
+  {
+    state = 0
+    document.aForm.numWrong.value++
+    document.aForm.Right.value = " " + document.aForm.numRight.value
+    document.aForm.Wrong.value = " " + document.aForm.numWrong.value
+  }
+}
+
+
+</SCRIPT>
+</head>
+
+<body>
+<center>
+<h1>Flash Cards on Computer Systems</h1>
+</center>
+
+<FORM name="aForm">
+<center>
+<textarea name="questionArea" rows="5" cols="70" wrap="physical">
+Instructions:
+Click on button 1 to see the question. 
+Mentally answer the question.
+(Does not work with Adobe (pdf) version.)
+</textarea>
+
+<textarea name="answerArea" rows="5" cols="70" wrap="physical">
+Click on button 2 to see the correct answer. 
+Then click on the "Right" or the "Wrong"
+button as appropriate.
+Repeat.
+</textarea>
+
+<p>
+Questions so far
+&nbsp;&nbsp;
+<input type=text name="Counter" size=5 value="">
+&nbsp;&nbsp;
+Number Right:
+&nbsp;&nbsp;
+<input type=text name="Right" size=5 value="">
+&nbsp;&nbsp;
+Number Wrong:
+&nbsp;&nbsp;
+<input type=text name="Wrong" size=5 value="">
+</p>
+
+<INPUT TYPE="button" 
+  name="questionButton" 
+  value="1. Ask Question" 
+  onClick="questionClick()">
+
+&nbsp;
+
+<INPUT TYPE="button" NAME="answerButton" 
+  value="2. Show Answer" 
+  onClick=answerClick()>
+
+&nbsp;
+
+<INPUT TYPE="button" NAME="rightButton" 
+  VALUE="3. Right" 
+  onClick="rightClick()">
+
+OR
+
+<INPUT TYPE="button" NAME="wrongButton" 
+  VALUE="3. Wrong" 
+  onClick="wrongClick()">
+
+<input type="hidden" name="numRight" value="0">
+<input type="hidden" name="numWrong" value="0">
+<input type="hidden" name="count" value="0">
+</center>
+</FORM>
+
+<hr>
+<p>
+<b>Instructions:</b> &nbsp; 
+Click on button 1 to see the question. 
+Mentally answer the question.
+Click on button 2 to see the correct answer. 
+Then click on the "Right" or the "Wrong"
+button as appropriate.
+Repeat.
+</p>
+
+<p>
+Incorrectly answered questions are recycled.
+Others are removed from the deck.
+The program stops when all questions have been answered correctly.
+</p>
+
+<p>
+<hr>
+<form name="bForm">
+<center>
+<input type=button value="Click here to go back" onClick="history.back()">
+</center>
+</form>
+</p>
+
+<p>
+<font size=-1>If you want to make your own flash cards save this page to a file
+(use the File menu of the browser.)  Then look at the file with a text editor
+and follow the directions.</font>
+</p>
+
+</body>
+</html>

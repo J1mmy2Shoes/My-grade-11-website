@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			//Q1
+			let name=null;
+			let answer0=null;
+			let answer6=null;
+			
+			name=prompt("Hello, welcome to my math game. What is your name?");
+			answer0=+prompt(name+", what is 2 + 5?");
+			if(answer0==7)
+			{
+				alert("Nice work "+name+", you got that RIGHT!");
+			}
+			else
+			{
+				alert(name+", you got that WRONG!");
+			}
+			answer6=+prompt(name+", what is 3 x 6?");
+			if(answer6==18)
+			{
+				alert("Nice work "+name+", you got that RIGHT!");
+			}
+			else
+			{
+				alert(name+", you got that WRONG!");
+			}
+			alert("Have a nice day!");
+
+			//Q2
+
+			let squareFeet=null;
+			let sheetCost=null;
+			let totalCost=null;
+			let sheetNumber=null;
+
+			squareFeet=+prompt("Hello, what is the square footage of flooring that needs to be covered?");
+			sheetCost=+prompt("How much does each sheet cost?");
+
+			sheetNumber=Math.ceil(squareFeet/32);
+			totalCost=Math.round(100*(sheetCost*sheetNumber*1.13))/100;
+
+
+			alert("You will need " + sheetNumber + " sheets.");
+			alert("The total cost including tax is $" + totalCost + ".");
+
+
+			//Q3
+			alert("Computer Science Quiz!");
+
+			let score=0;
+
+			let answer1=prompt("What does URL stand for? (answer with letter only)\n a) Uniform Ritual Lesson \n b) Uniform Resource Locator \n c) World Wide Web");
+
+			if (answer1=="b" || answer1=="B")
+				{
+					alert("Correct! Next question");
+					score++;
+				}
+			else
+				{
+					alert("Wrong, next question");
+				}
+
+			let answer2=prompt("Who is the greatest computer science teacher?");
+
+			if (answer2=="krnic" || answer2=="Krnic")
+				{
+					alert("Correct! Next question");
+					score++;
+				}
+			else
+				{
+					alert("Wrong, next question");
+				}
+			
+
+			let answer3=prompt("True or False?: \n A byte is made up of 7 bits.");
+
+			if (answer3=="False" || answer3=="false")
+				{
+					alert("Correct! End of quiz");
+					score++;
+				}
+			else
+				{
+					alert("Wrong, end of quiz");
+				}
+
+			if (score==3)
+				{
+					alert("Congratulations, you have passed the quiz! You got 3 out of 3 for a result of 100%.");
+				}
+			else if (score==2)
+				{
+					alert("Not bad, you still passed but only got 2 out of 3 for a result of 66%.");
+				}
+			else if (score==1)
+				{
+					alert("Not good. You failed. You only got 1 out of 3 for a result of 33%");
+				}
+			else if (score==0)
+				{
+					alert("Yikes, you failed big time! You got none of the questions correct");
+				}
+
+			alert("Thanks for playing!");
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,215 @@
+/*
+	Yi Bo Cheng, James Billinger
+	03/01/2019
+	Unit 1 Webpage Assignment
+	This is the styles sheet of the homepage.	
+*/
+/*The color scheme, font and theme we used for the homepage.*/ 
+body{
+	background-color: #292826;
+	color: white;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: 'Metrophobic', sans-serif;
+	text-align: center;
+}
+h2{
+	font-family: 'Metrophobic', sans-serif;
+	text-align: center;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 25px;
+	text-align: center;
+}
+/*Style for heading and main picture*/
+.heading h1{
+	font-size: 75px;
+	color: #f9d342;
+}
+.heading h2{
+	font-size: 30px;
+	margin-bottom: 75px;
+}
+.picture{
+	text-align: center;
+}
+/*Style for unit description*/
+.description{
+	text-align: center;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #696969;
+	margin-top: 125px;
+	margin-bottom: 175px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	line-height: 30px;
+}
+.description h2{
+	color: #f9d342;
+	font-size: 50px;
+}
+.description p{
+	font-size: 20px;
+	line-height: 40px;
+}
+.heading2{
+	color: #f9d342;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: underline;
+}
+/*Style for the navagation section*/
+.topics{
+	margin-top: 25px;
+}
+.topics h2{
+	font-size: 20px;
+}
+.topics a{
+	font-family: 'Metrophobic', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+/*Style for the 3 columns We found this code from https://www.w3schools.com/howto/howto_css_three_columns.asp*/
+.column-left1{
+	float: left; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 75px;
+}
+.column-left2{
+	float: left; 
+	width: 33.33%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: 75px;
+}
+.column-left3{
+	float: left; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+.column-center1{
+	display: inline-block; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 75px;
+}
+.column-center2{
+	display: inline-block; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+}
+.column-center3{	
+	display: inline-block; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+.column-right1{ 
+	float: right; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+}
+.column-right2{ 
+	float: right; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+}
+.column-right3{ 
+	float: right; 
+	width: 33.33%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+.main{
+	border-color: green;
+}
+.menuimage:hover{
+	opacity: 0.6;
+}
+/*Style for sitemaps*/
+.heading3{
+	margin-top: 200px;
+	margin-bottom: 50px;
+	color: #f9d342;
+	text-decoration: underline; 
+}
+.sitemap{
+	text-align: center;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Style for page layouts*/
+.layout{
+	margin-top: 100px;
+}
+.layout h1{
+	text-decoration: underline;
+	color: #f9d342;
+}
+.layoutleft{
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.layoutright{
+	float: right;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.layout img{
+	border-radius: 10px;
+}
+.layout h2{
+	color: #f9d342;
+}
+/*Style for text file*/
+.textfile{
+	text-align: center;
+	text-decoration: none;
+	color: #f9d342;
+}
+.fileimage:hover{
+	opacity: 0.6;
+}

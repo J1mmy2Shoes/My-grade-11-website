@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+
+
+			//Question 1
+			let james=0;
+
+			for (james=0; james<10; james++)	
+			{
+				console.log(james + ", ");
+			}
+
+			while (james>=10 && james<100)
+			{
+				console.log(james + ", ")
+				james=james+5;
+			}
+			while (james>=100 && james<200)
+			{
+				console.log(james + ", ")
+				james=james+10;
+			}
+			while (james>=200 && james<300)
+			{
+				console.log(james + ", ")
+				james=james+20;
+			}
+			while (james>=300 && james<400)
+			{
+				console.log(james + ", ")
+				james=james+50;
+			}
+			console.log("400, ");
+			console.log("500");
+
+			//Question 2
+			let startingPopulation=2198888;
+			let weeks=0;
+			let percent=0;
+			let decreasingNumber=0;
+
+			percent=+prompt("By what percentage will the mice population be rescued each week?");
+			if(percent>=0.1&&percent<=5)
+			{
+				percent*=0.01;
+				percent=1-percent;
+				console.log("Week Population");
+				while(startingPopulation>1000000)
+				{
+					startingPopulation=Math.round(startingPopulation*percent);
+					weeks++;
+					console.log(weeks+"  "+startingPopulation);
+				}
+				console.log("It will take "+weeks+" weeks to get the population under control.");
+			}
+			else
+			{
+				alert("Please enter a percentage between 0.1 and 5.0");
+			}
+			
+			//Question 3
+
+			let displaynum=0;
+			let addition=1;
+			let count=0;
+
+
+			while (count<=999)
+			{
+				displaynum=displaynum+addition;
+				console.log(displaynum + ", ");
+				count==count++;
+				addition==addition++;
+			}
+			console.log("501501");
+
+			//question 4
+			let amount=0;
+			let years=0;
+			let invest=0;
+			let counter=0;
+			let equal=0;
+
+			amount=+prompt("Welcome to Bob's Bank. how much money would you like to invest?")
+			equal=amount
+			years=+prompt("How many years do you want to invest?")
+			console.log("Year    Amount");
+			while (counter<years)
+			{
+				amount=Math.round(100*(amount*1.09))/100;
+				counter++;
+
+				console.log(counter +"       $" + amount);
+
+			}
+			amount=Math.round(100*(amount-equal))/100;
+			console.log("You have made a whopping $" + amount + " in interest by investing with us!");
+
+		</script>
+	</head>
+	
+	<body>
+
+	</body>
+</html>

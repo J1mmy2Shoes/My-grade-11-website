@@ -1,0 +1,477 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../QUIZstyle.css" />
+<link rel="stylesheet" type="text/css" href="../QUIZstyle.css" /> 
+<!-- FILL in the Quiz Name between <title> and </title> -->
+<title>
+Quiz on Chapter Four
+</title>
+<meta name="copyright" content="2002,  Bradley Kjell">
+<meta name="author" content="Bradley Kjell kjell@ieee.org ">
+<meta name="robots" content="noindex,nofollow">
+</head>
+
+<script language="JavaScript">
+function gradeQuiz( reportForm )
+{
+  var totalRight = 0;
+ 
+  for ( var count=0; count < document.forms.length-1; count++ )
+  {
+    if ( document.forms[ count ].response.value == document.forms[ count ].answer.value  )
+      totalRight++ ;   
+    document.forms[ count ].correct.value=document.forms[ count ].answer.value 
+  }
+
+  reportForm.grade.value   = " " + totalRight
+  percent                  = (100*totalRight)/(document.forms.length-1)
+  reportForm.percent.value = " " + percent
+  if ( percent > 90 )
+    reportForm.letter.value = "A"
+  else if ( percent > 80 )
+    reportForm.letter.value = "B"
+  else if ( percent > 70 )
+    reportForm.letter.value = "C"
+  else if ( percent > 60 )
+    reportForm.letter.value = "D"
+  else 
+    reportForm.letter.value = "hmm.."
+    
+}
+</script>
+
+<body>
+<p><small>Revised: 01/17/00</small><hr/></p>
+<center><h1>
+<!-- FILL in the Quiz Name on the next line-->
+Quiz on Chapter Four
+<!-- end of Quiz Name -->
+</h1></center> 
+<img src="quizBlend.gif" align="left" vspace="20" hspace="20"/>
+<br/>
+<br/>
+<p>
+This is a practice quiz.
+The results are not recorded anywhere and do not affect your grade.
+The questions on this quiz might not appear 
+in any quiz or test that does count toward your grade.
+</p>
+<br/>
+<br/>
+<p>
+<b>Instructions:</b> 
+For each question,
+choose the single best answer.
+Make your choice by clicking on its button.
+You can change your answers at any time.
+When the quiz is graded, the correct answers will appear in the box after each question.
+</p>
+<br clear="all"/>
+
+<hr/>
+<form name="question1">
+
+<p>
+1.
+<!-- FILL in Question 1-->
+What part of a computer system is most directly concerned with
+performing the actions called for by a program? 
+<!-- end of question -->   
+</p>
+
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+The hard disk .
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+Main Storage.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+The processor. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+The monitor. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="C"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question2">
+<p>
+2.
+<!-- FILL in Question 2-->
+About how many different fundamental operations
+can most processors perform? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+2 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+A few dozen.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A few hundred. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Many thousands. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="C"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question3">
+<p>
+3.
+<!-- FILL in Question 3 -->
+What is a <em>machine operation</em>? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Any activity of any part of the computer system. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+One of the tiny electronic operations that a processor can perform. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A section of main memory that is part of a computer program. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+An activity of the operating system needed to run a program. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="B"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question4">
+<p>
+4.
+<!-- FILL in Question 4-->
+What is a <em>machine instruction</em>? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Several bytes in main memory that tells the processor to perform one machine operation. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+A particular combination of keys on the keyboard that turns the computer system off.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A byte that contains numeric data. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+An electrical signal that activates the processor. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="A"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question5">
+<p>
+5.
+<!-- FILL in Question 5-->
+Which one of the following statements is FALSE?
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+A machine language program is a sequence of machine language instructions in main memory. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+A machine language program is also known as an executable program.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+The processor runs a program one machine instruction at a time.  
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Each machine instruction can be used only once. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question6">
+<p>
+6.
+<!-- FILL in Question 6-->
+How many machine instructions can execute per second on a modern processor? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+One instruction per second. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+Ten instructions per second.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+One hundred instructions per second. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Millions of instructions per second. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question7">
+<p>
+7.
+<!-- FILL in Question 7-->
+What is the <em>architecture</em> of a computer processor? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+The physical layout of the chip---its electrical connections, supporting hardware, 
+and heat sink.
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+The additional electrical components necessary to make the processor run.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+The choice of machine operations and how they are implemented. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+The set of high level languages that run on the processor. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="C"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question8">
+<p>
+8.
+<!-- FILL in Question 8-->
+What is a <em>source program</em>? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+The program that the processor is execting a particular instant. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+The first copy ever made of a program.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A text file created by a programmer containing instructions written in a high level language. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+A collection of machine instructions that the processor can execute. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="C"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question9">
+<p>
+9.
+<!-- FILL in Question 9-->
+What does a computer language <em>compiler</em> do? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+It takes a source file as input and produces an executable program as output. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+It takes an executable program as input and runs it on the computer.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+It takes the output of a program and displays it on the computer monitor. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+It translates a program in main memory into a program on secondary memory. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="A"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+
+<hr/>
+<form name="question10">
+<p>
+10.
+<!-- FILL in Question 10-->
+What is an <em>interpreter</em>? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+An interpreter  takes an executable program as input and creates a source program.
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+An interpreter is a program that acts 
+like a processor that can directly execute a high level language. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+An interpreter acts as an messenger between main memory and secondary memory. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+An interpreter translates exectutable programs between Apple computers and Intel computers.
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="B"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+
+<hr>
+<form name="evaluateQuest">
+<p>
+<center>
+<input type="button" value="grade quiz" onClick="gradeQuiz(this.form)">
+</center>
+<p>
+The number you got right:
+&nbsp;&nbsp;
+<input type=text name="grade" size=5>
+&nbsp;&nbsp;
+Percent Correct:
+&nbsp;&nbsp;
+<input type=text name="percent" size=5>
+&nbsp;&nbsp;
+Letter Grade:
+&nbsp;&nbsp;
+<input type=text name="letter" size=5>
+</form>
+
+<table>
+<tr>
+<td>
+<A HREF="../../cs151java.html#04">
+<img src="../contents.gif" alt="Click here" align="center"> </A> 
+</td>
+<td>
+(If you have just returned here from another page, 
+or have re-loaded this page, you will need to click again on 
+each of your choices for the grading program to work correctly.
+You may want to press the "shift key" while clicking on reload to clear
+the old answers.)
+</td>
+</tr>
+</table>
+
+</body>
+</html>

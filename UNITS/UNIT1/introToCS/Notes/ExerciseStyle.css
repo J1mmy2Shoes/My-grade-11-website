@@ -1,0 +1,111 @@
+body
+{
+background-color:#f7f2fa;
+font-family:arial,sans-serif; 
+}
+
+p
+{
+margin-left: 0.5em;
+margin-right: 0.5em;
+}
+
+ol
+{
+margin-left:1.5cm;
+}
+
+ul
+{
+margin-left:1.5cm;
+}
+
+
+.blue
+{
+color:blue;
+}
+
+.red
+{
+color:red;
+}
+
+.green
+{
+color:green;
+}
+
+.answer h3
+{
+color:blue;
+}
+
+h1
+{
+color:darkblue;
+text-align:center
+margin-left: 0.5em;
+}
+
+h2
+{
+color:darkblue;
+margin-left: 0.5em;
+}
+
+hr
+{
+color:darkblue;
+}
+
+pre 
+{
+margin-left:1cm;
+font-family:courier-new; 
+font-size:90%
+}
+
+pre.code
+{
+margin-left:1cm;
+font-family:courier-new; 
+font-size:90%;
+}
+
+pre.program
+{
+width:auto;
+margin-left:1cm;
+margin-right:1cm;
+padding:0.5cm;
+border-style:double;
+border-color:darkblue;
+background-color:white;
+font-family:courier-new; 
+font-size:90%;
+}
+
+code
+{
+font-family:courier-new; 
+font-size:110%
+}
+
+table 
+{
+margin-left:1cm;
+font-family:arial,sans-serif; 
+font-size:90%;
+}
+
+table pre
+{
+margin-left:0.4cm;
+margin-right:0.4cm;
+}
+
+a:link     { color:blue }
+a:visited  { color:brown }
+a:active   { color:red }
+a:hover    { color:red }

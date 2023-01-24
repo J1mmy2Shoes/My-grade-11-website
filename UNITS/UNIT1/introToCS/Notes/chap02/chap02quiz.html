@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../QUIZstyle.css" /> 
+<!-- Created 2/13/99 -->
+<title>
+Quiz on Chapter Two
+</title>
+<meta name="copyright" content="2002,  Bradley Kjell">
+<meta name="author" content="Bradley Kjell kjell@ieee.org ">
+<meta name="robots" content="noindex,nofollow">
+</head>
+
+<script language="JavaScript">
+function gradeQuiz( reportForm )
+{
+  var totalRight = 0;
+ 
+  for ( var count=0; count < document.forms.length-1; count++ )
+  {
+    if ( document.forms[ count ].response.value == document.forms[ count ].answer.value  )
+      totalRight++ ;   
+    document.forms[ count ].correct.value=document.forms[ count ].answer.value 
+  }
+
+  reportForm.grade.value   = " " + totalRight
+  percent                  = (100*totalRight)/(document.forms.length-1)
+  reportForm.percent.value = " " + percent
+  if ( percent > 90 )
+    reportForm.letter.value = "A"
+  else if ( percent > 80 )
+    reportForm.letter.value = "B"
+  else if ( percent > 70 )
+    reportForm.letter.value = "C"
+  else if ( percent > 60 )
+    reportForm.letter.value = "D"
+  else 
+    reportForm.letter.value = "hmm.."
+    
+}
+</script>
+
+<body>
+<p>
+<small> Created 2/13/99; Revised 01/16/00, 06/26/02</small>
+</p>
+<hr/>
+
+<img src="quizPicture.gif" align="left" hspace="15" vspace="15">
+<center><h1>
+<!-- FILL in the Quiz Name on the next line-->
+Quiz on Chapter Two
+<!-- end of Quiz Name -->
+</h1>
+</center> 
+
+<p>
+This is a practice quiz.
+The results are not recorded anywhere and do not affect your grade.
+The questions on this quiz might not appear 
+in any quiz or test that does count toward your grade.
+</p>
+
+<p>
+<b>Instructions:</b> 
+For each question,
+choose the single best answer.
+Make your choice by clicking on its button.
+You can change your answers at any time.
+When the quiz is graded, the correct answers will appear in the box after each question.
+</p>
+<br clear="all"/>
+
+<hr/>
+<form name="question1">
+<p><p>
+1.
+<!-- FILL in Question 1-->
+What does the word <em>binary</em> mean?
+</em> <!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+<em>Binary</em> means "containing a computer."
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+<em>Binary</em> means "having only two states."
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+<em>Binary</em> means "having a discrete number of values."
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question1.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+<em>Binary</em> means "using electronics to do arithmetic."
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="B"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question2">
+<p>
+2.
+<!-- FILL in Question 2-->
+What is a <em>bit</em>? 
+<!-- end of question -->   
+</p>
+
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+A <em>bit</em> is a single binary value.
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+A <em>bit</em> is a single character stored in main memory.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A <em>bit</em> is a collection of several bytes. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question2.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+A <em>bit</em> is a small unit of computer time.
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="A"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question3">
+<p>
+3.
+<!-- FILL in Question 3 -->
+Which of the following is <b>NOT</b> an advantage of building computers out of binary devices?
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Binary devices are simple and easy to build. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+Binary signals are unambiguous.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+Binary devices are much faster than decimal devices. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question3.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Patterns of bits can be used to represent anything symbolic. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="C"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question4">
+<p>
+4.
+<!-- FILL in Question 4-->
+What is true of an <em>analog</em> signal? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+An analog signal has a discrete number of states. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+An analog signal is the only way that music can be recorded.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+An analog signal can never be converted into a binary signal. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question4.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+An analog signal is usually continuously changing in value. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question5">
+<p>
+5.
+<!-- FILL in Question 5-->
+If an <b>analog</b> signal picks up some noise, has information been lost? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Yes&#8212;the noise hides the exact values of the original signal.
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+No&#8212;electronics can just ignore the noise.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+No&#8212;information has been added to the signal.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question5.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Maybe&#8212;it depends on how loud the noise is.
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="A"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question6">
+<p>
+6.
+<!-- FILL in Question 6-->
+If a <b>binary</b> signal picks up some noise, has information been lost? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Yes&#8212;the exact value of the bits cannot be determined. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+No&#8212;the exact value of the bits can be determined, as long as the noise is not too great.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+No&#8212;binary signals can't pick up any noise. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question6.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Yes&#8212;the signal will have extra bits in it because of the noise.
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="B"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question7">
+<p>
+7.
+<!-- FILL in Question 7-->
+Why does a computer have a clock? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+The state of binary signals is measured only at specific instants in time. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+A clock is needed to check how fast signals are changing.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+A clock is needed to check that voltage levels are correct.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question7.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+A clock is used only with application programs that need to know the current time. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="A"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question8">
+<p>
+8.
+<!-- FILL in Question 8-->
+Can Japanese writing be represented in a computer?
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+No&#8212;only English can be represented. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+No&#8212only languages with an alphabet can be represented.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+Yes&#8212but a special processor chip is needed. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question8.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Yes&#8212since it is symbolic, and anything symbolic can be represented. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+<hr/>
+<form name="question9">
+<p>
+9.
+<!-- FILL in Question 9-->
+Can English writing be represented with <b>analog</b> signals?
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+No&#8212;only binary signals can represent symbolic data. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+No&#8212;it is not symbolic.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+No&#8212;analog signals don't represent anything. 
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question9.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+Yes&#8212;just read out loud into a microphone.
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+<hr/>
+<form name="question10">
+<p>
+10.
+<!-- FILL in Question 10-->
+Why is it important that unlimited perfect copies can be made of data represented in binary? 
+<!-- end of question -->   
+</p>
+<table>
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='A'"><b>a.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer A -->
+Because data are copied back and forth between parts of a computer system many times per second. 
+<!-- end of answer -->   
+</td></tr>
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='B'"><b>b.&nbsp;&nbsp;&nbsp;</b> 
+<!-- FILL in answer B -->
+Transmitting data over the Internet involves making many copies of the data.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='C'"><b>c.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer C -->
+Application programs such as wordprocessors and computer games
+must be perfect copies of the original in order to run.
+<!-- end of answer -->   
+</td></tr> 
+<tr><td><input type="radio" name="questradio" value="" onClick="question10.response.value='D'"><b>d.&nbsp;&nbsp;&nbsp;</b>
+<!-- FILL in answer D -->
+All of the above. 
+<!-- end of answer -->   
+</td></tr> 
+</table>
+<input type="hidden" name="answer" value="D"> <!-- REPLACE X with the capital letter of the correct answer -->
+                                              <!-- No spaces between the quotes. Eg.: value="A" -->
+<input type="text" name="correct" value="  " size=5>
+<input type="hidden" name="response" value="" >
+</form>
+
+
+<hr/>
+<form name="evaluateQuest">
+<p>
+<center>
+<input type="button" value="grade quiz" onClick="gradeQuiz(this.form)">
+</center>
+<p>
+The number you got right:
+&nbsp;&nbsp;
+<input type=text name="grade" size=5>
+&nbsp;&nbsp;
+Percent Correct:
+&nbsp;&nbsp;
+<input type=text name="percent" size=5>
+&nbsp;&nbsp;
+Letter Grade:
+&nbsp;&nbsp;
+<input type=text name="letter" size=5>
+</form>
+
+<table>
+<tr>
+<td>
+<A HREF="../../cs151java.html#02">
+<img src="../contents.gif" alt="Click here" align="center"> </A> 
+</td>
+<td>
+(If you have just returned here from another page, 
+or have re-loaded this page, you will need to click again on 
+each of your choices for the grading program to work correctly.
+You may want to press the "shift key" while clicking on reload to clear
+the old answers.)
+</td>
+</tr>
+</table>
+
+</body>
+</html>

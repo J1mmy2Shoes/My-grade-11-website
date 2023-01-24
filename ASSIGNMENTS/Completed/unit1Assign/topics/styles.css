@@ -1,0 +1,71 @@
+/* 
+	Yi Bo Cheng, James Billinger
+	03/01/2019
+	Unit 1 Webpage Assignment
+	This is the style sheet we used for every topic page.
+*/
+/*The color scheme, font and theme we used for the topic pages.*/ 
+body{
+	background-color: #292826;
+	color: white;
+}
+h1{
+	font-family: 'Metrophobic', sans-serif;
+	text-align: center;
+}
+h2{
+	font-family: 'Metrophobic', sans-serif;
+	text-align: center;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+/*Style for topic heading, picture, and description*/
+.description p{	
+	font-family: 'Montserrat', sans-serif;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #696969;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	font-size: 30px;
+}
+.heading{
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 280px;
+	margin-left: 250px;
+}
+.heading h1{
+	font-size: 75px;
+	color: #f9d342;
+}
+.picture{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+/*Style for home button*/
+.home{
+	float: left;
+}
+/*Style for reference section*/
+.reference p{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #696969;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	font-size: 20px;
+}
